@@ -1,0 +1,365 @@
+{
+ "ozet": {
+  "pencere_gun": 30,
+  "kapsam": {
+   "baslangic": "28.08.2014",
+   "bitis": "15.07.2026"
+  },
+  "hutbe_sayisi": 618,
+  "tccb_konusma_sayisi": 1999,
+  "kelime_cift_sayisi": 3486,
+  "kelime_bazinda": {
+   "oncu_tccb": 954,
+   "oncu_hutbe": 277,
+   "ayni_gun": 18,
+   "yok": 2237,
+   "oncu_tccb_yuzde": 27.4,
+   "oncu_hutbe_yuzde": 7.9,
+   "yok_yuzde": 64.2
+  },
+  "hutbe_bazinda": {
+   "TCCB_ONCE_EN_AZ_BIR": 464,
+   "SADECE_HUTBEDEN_SONRA": 43,
+   "HIC_YOK": 111
+  },
+  "ortalama_gecikme_gun": -12.8
+ },
+ "jenerik_ornekler": [
+  {
+   "kelime": "dua",
+   "adet": 33
+  },
+  {
+   "kelime": "gazze",
+   "adet": 29
+  },
+  {
+   "kelime": "kardeşlik",
+   "adet": 26
+  },
+  {
+   "kelime": "aile",
+   "adet": 25
+  },
+  {
+   "kelime": "ramazan",
+   "adet": 23
+  },
+  {
+   "kelime": "sabır",
+   "adet": 22
+  },
+  {
+   "kelime": "dayanışma",
+   "adet": 20
+  },
+  {
+   "kelime": "ibadet",
+   "adet": 20
+  },
+  {
+   "kelime": "kurban bayramı",
+   "adet": 19
+  },
+  {
+   "kelime": "gençlik",
+   "adet": 17
+  }
+ ],
+ "olay_ozel": [
+  {
+   "grup": "Gazze / Filistin",
+   "n": 50,
+   "tccb_once_n": 45,
+   "tccb_once_yuzde": 90.0,
+   "ortalama_gecikme_gun": -20.3,
+   "ornekler": [
+    {
+     "hutbe_tarih": "26.01.2024",
+     "hutbe_baslik": "MÜLK SÛRESİNDEN MESAJLAR",
+     "kelime": "gazze",
+     "durum": "ONCU_TCCB",
+     "gecikme_gun": -30,
+     "tccb_tarih": "27.12.2023",
+     "tccb_baslik": "100. Yıl TÜBİTAK ve TÜBA Bilim Ödülleri Töreni’nde Yaptıkları Konuşma",
+     "tccb_url": "https://tccb.gov.tr/konusmalar/353/150644/-100-yil-tubitak-ve-tuba-bilim-odulleri-toreni-nde-yaptiklari-konusma",
+     "tccb_id": "150644"
+    },
+    {
+     "hutbe_tarih": "23.02.2024",
+     "hutbe_baslik": "BERAT GECESİ: GÜNAHLARDAN ARINMA VESİLESİ",
+     "kelime": "gazze",
+     "durum": "ONCU_TCCB",
+     "gecikme_gun": -30,
+     "tccb_tarih": "24.01.2024",
+     "tccb_baslik": "Türkiye-İran İş Forumu’nda Yaptıkları Konuşma",
+     "tccb_url": "https://tccb.gov.tr/konusmalar/353/150876/turkiye-iran-is-forumu-nda-yaptiklari-konusma",
+     "tccb_id": "150876"
+    },
+    {
+     "hutbe_tarih": "10.11.2023",
+     "hutbe_baslik": "AZİM VE GAYRET SAHİBİ BİR MÜMİN OLABİLMEK",
+     "kelime": "filistin",
+     "durum": "ONCU_TCCB",
+     "gecikme_gun": -29,
+     "tccb_tarih": "12.10.2023",
+     "tccb_baslik": "Türkiye Gençlik Vakfı Teşkilat Buluşması’nda Yaptıkları Konuşma",
+     "tccb_url": "https://tccb.gov.tr/konusmalar/353/149829/turkiye-genclik-vakfi-teskilat-bulusmasi-nda-yaptiklari-konusma",
+     "tccb_id": "149829"
+    }
+   ]
+  },
+  {
+   "grup": "Terör",
+   "n": 16,
+   "tccb_once_n": 11,
+   "tccb_once_yuzde": 68.8,
+   "ortalama_gecikme_gun": -16.2,
+   "ornekler": [
+    {
+     "hutbe_tarih": "11.09.2015",
+     "hutbe_baslik": "BİRLİĞİMİZİ, BERABERLİĞİMİZİ, KARDEŞLİĞİMİZİ MUHAFAZA EDELİM!",
+     "kelime": "terör",
+     "durum": "ONCU_TCCB",
+     "gecikme_gun": -30,
+     "tccb_tarih": "12.08.2015",
+     "tccb_baslik": "8. Muhtarlar Toplantısı’nda Yaptıkları Konuşma",
+     "tccb_url": "https://tccb.gov.tr/konusmalar/353/35906/8-muhtarlar-toplantisinda-yaptiklari-konusma",
+     "tccb_id": "35906"
+    },
+    {
+     "hutbe_tarih": "18.03.2016",
+     "hutbe_baslik": "ÇANAKKALE VE BİRLİK RUHU",
+     "kelime": "terör",
+     "durum": "ONCU_TCCB",
+     "gecikme_gun": -30,
+     "tccb_tarih": "17.02.2016",
+     "tccb_baslik": "İkinci Mülki Amirler Toplantısı’nda Yaptıkları Konuşma",
+     "tccb_url": "https://tccb.gov.tr/konusmalar/353/39883/ikinci-mulki-amirler-toplantisinda-yaptiklari-konusma",
+     "tccb_id": "39883"
+    },
+    {
+     "hutbe_tarih": "22.04.2016",
+     "hutbe_baslik": "TEVHİD VE VAHDETİN ÖNCÜSÜ MÜMİNLER",
+     "kelime": "terör",
+     "durum": "ONCU_TCCB",
+     "gecikme_gun": -28,
+     "tccb_tarih": "25.03.2016",
+     "tccb_baslik": "Bozok Üniversitesi Tarafından Fahri Doktora Tevdii Töreni'nde Yaptıkları Konuşma",
+     "tccb_url": "https://tccb.gov.tr/konusmalar/353/41313/bozok-universitesi-tarafindan-fahri-doktora-tevdii-toreninde-yaptiklari-konusma",
+     "tccb_id": "41313"
+    }
+   ]
+  },
+  {
+   "grup": "Salgın / Koronavirüs",
+   "n": 14,
+   "tccb_once_n": 11,
+   "tccb_once_yuzde": 78.6,
+   "ortalama_gecikme_gun": -15.7,
+   "ornekler": [
+    {
+     "hutbe_tarih": "24.04.2020",
+     "hutbe_baslik": "RAMAZAN: SABIR VE İRADE EĞİTİMİ",
+     "kelime": "koronavirüs",
+     "durum": "ONCU_TCCB",
+     "gecikme_gun": -30,
+     "tccb_tarih": "25.03.2020",
+     "tccb_baslik": "Ulusa Sesleniş Konuşması",
+     "tccb_url": "https://tccb.gov.tr/konusmalar/353/118053/ulusa-seslenis-konusmasi",
+     "tccb_id": "118053"
+    },
+    {
+     "hutbe_tarih": "13.05.2021",
+     "hutbe_baslik": "KUDÜS’ÜN ÖZGÜR OLDUĞU BAYRAMLARA",
+     "kelime": "salgın",
+     "durum": "ONCU_TCCB",
+     "gecikme_gun": -30,
+     "tccb_tarih": "13.04.2021",
+     "tccb_baslik": "Kabine Toplantısı’nın Ardından Yaptıkları Konuşma",
+     "tccb_url": "https://tccb.gov.tr/konusmalar/353/126588/kabine-toplantisi-nin-ardindan-yaptiklari-konusma-",
+     "tccb_id": "126588"
+    },
+    {
+     "hutbe_tarih": "24.12.2021",
+     "hutbe_baslik": "AHİRET DAHA HAYIRLI VE SÜREKLİDİR",
+     "kelime": "salgın",
+     "durum": "ONCU_TCCB",
+     "gecikme_gun": -30,
+     "tccb_tarih": "24.11.2021",
+     "tccb_baslik": "İSEDAK 37. Bakanlar Toplantısında Yaptıkları Konuşma",
+     "tccb_url": "https://tccb.gov.tr/konusmalar/353/133609/isedak-37-bakanlar-toplantisinda-yaptiklari-konusma",
+     "tccb_id": "133609"
+    }
+   ]
+  },
+  {
+   "grup": "15 Temmuz",
+   "n": 13,
+   "tccb_once_n": 10,
+   "tccb_once_yuzde": 76.9,
+   "ortalama_gecikme_gun": -13.6,
+   "ornekler": [
+    {
+     "hutbe_tarih": "12.07.2019",
+     "hutbe_baslik": "15 TEMMUZ’U ANMAK, İHANETİ ANLAMAK",
+     "kelime": "15 temmuz",
+     "durum": "ONCU_TCCB",
+     "gecikme_gun": -26,
+     "tccb_tarih": "16.06.2019",
+     "tccb_baslik": "İhracatın Şampiyonları Ödül Töreni ve Türkiye İhracatçılar Meclisi Olağan Genel Kurulu’nda Yaptıkları Konuşma",
+     "tccb_url": "https://tccb.gov.tr/konusmalar/353/105698/ihracatin-sampiyonlari-odul-toreni-ve-turkiye-ihracatcilar-meclisi-olagan-genel-kurulu-nda-yaptiklari-konusma",
+     "tccb_id": "105698"
+    },
+    {
+     "hutbe_tarih": "10.07.2020",
+     "hutbe_baslik": "15 TEMMUZ VE BİRLİK RUHU",
+     "kelime": "15 temmuz",
+     "durum": "ONCU_TCCB",
+     "gecikme_gun": -20,
+     "tccb_tarih": "20.06.2020",
+     "tccb_baslik": "Marmara Üniversitesi Hastanesi Açılış Töreni’nde Yaptıkları Konuşma",
+     "tccb_url": "https://tccb.gov.tr/konusmalar/353/120470/marmara-universitesi-hastanesi-acilis-toreni-nde-yaptiklari-konusma",
+     "tccb_id": "120470"
+    },
+    {
+     "hutbe_tarih": "26.01.2018",
+     "hutbe_baslik": "BİRLİK VE BERABERLİK RUHU",
+     "kelime": "15 temmuz",
+     "durum": "ONCU_TCCB",
+     "gecikme_gun": -19,
+     "tccb_tarih": "07.01.2018",
+     "tccb_baslik": "Boğaziçi Üniversitesi Mezunları Programında Yaptıkları Konuşma",
+     "tccb_url": "https://tccb.gov.tr/konusmalar/353/89346/bogazici-universitesi-mezunlari-programinda-yaptiklari-konusma",
+     "tccb_id": "89346"
+    }
+   ]
+  },
+  {
+   "grup": "Deprem",
+   "n": 7,
+   "tccb_once_n": 6,
+   "tccb_once_yuzde": 85.7,
+   "ortalama_gecikme_gun": -25.3,
+   "ornekler": [
+    {
+     "hutbe_tarih": "31.01.2020",
+     "hutbe_baslik": "AFETLERE KARŞI BİLİNÇLİ OLALIM",
+     "kelime": "deprem",
+     "durum": "ONCU_TCCB",
+     "gecikme_gun": -29,
+     "tccb_tarih": "02.01.2020",
+     "tccb_baslik": "Şehir ve Güvenlik Sempozyumu’nda Yaptıkları Konuşma",
+     "tccb_url": "https://tccb.gov.tr/konusmalar/353/114179/sehir-ve-guvenlik-sempozyumu-nda-yaptiklari-konusma",
+     "tccb_id": "114179"
+    },
+    {
+     "hutbe_tarih": "07.06.2024",
+     "hutbe_baslik": "KURBAN: RABBİMİZE VE KARDEŞLERİMİZE YAKINLAŞMANIN VESİLESİ",
+     "kelime": "deprem bölgesi",
+     "durum": "ONCU_TCCB",
+     "gecikme_gun": -28,
+     "tccb_tarih": "10.05.2024",
+     "tccb_baslik": "İdari Yargı Günü ve Danıştay'ın 156. Kurulu Yıl Dönümü Töreni’nde Yaptıkları Konuşma",
+     "tccb_url": "https://tccb.gov.tr/konusmalar/353/152319/idari-yargi-gunu-ve-danistay-in-156-kurulu-yil-donumu-toreni-nde-yaptiklari-konusma",
+     "tccb_id": "152319"
+    },
+    {
+     "hutbe_tarih": "10.02.2023",
+     "hutbe_baslik": "GÜN, MİLLETÇE KENETLENME GÜNÜDÜR",
+     "kelime": "deprem",
+     "durum": "ONCU_TCCB",
+     "gecikme_gun": -27,
+     "tccb_tarih": "14.01.2023",
+     "tccb_baslik": "Muğla Fethiye’de Halka Hitapları",
+     "tccb_url": "https://tccb.gov.tr/konusmalar/353/142542/mugla-fethiye-de-halka-hitaplari",
+     "tccb_id": "142542"
+    }
+   ]
+  },
+  {
+   "grup": "Mülteci",
+   "n": 4,
+   "tccb_once_n": 3,
+   "tccb_once_yuzde": 75.0,
+   "ortalama_gecikme_gun": -25.0,
+   "ornekler": [
+    {
+     "hutbe_tarih": "11.03.2016",
+     "hutbe_baslik": "DÜNYAYI İYİLİK DEĞİŞTİRİR",
+     "kelime": "mülteciler",
+     "durum": "ONCU_TCCB",
+     "gecikme_gun": -30,
+     "tccb_tarih": "10.02.2016",
+     "tccb_baslik": "20. Muhtarlar Toplantısı’nda Yaptıkları Konuşma",
+     "tccb_url": "https://tccb.gov.tr/konusmalar/353/38785/20-muhtarlar-toplantisinda-yaptiklari-konusma",
+     "tccb_id": "38785"
+    },
+    {
+     "hutbe_tarih": "17.07.2015",
+     "hutbe_baslik": "RAMAZAN BAYRAMI",
+     "kelime": "mülteciler",
+     "durum": "ONCU_TCCB",
+     "gecikme_gun": -27,
+     "tccb_tarih": "20.06.2015",
+     "tccb_baslik": "Midyat Geçici Barınma Merkezi'nde İftar Yemeğinde Yaptıkları Konuşma",
+     "tccb_url": "https://tccb.gov.tr/konusmalar/353/32785/midyat-gecici-barinma-merkezinde-iftar-yemeginde-yaptiklari-konusma",
+     "tccb_id": "32785"
+    },
+    {
+     "hutbe_tarih": "04.12.2015",
+     "hutbe_baslik": "BEDEN ÜLKESİNİN SULTANI: KALP",
+     "kelime": "mülteci krizi",
+     "durum": "ONCU_TCCB",
+     "gecikme_gun": -18,
+     "tccb_tarih": "16.11.2015",
+     "tccb_baslik": "G-20 Antalya Liderler Zirvesi Sonunda Basın Toplantısında Yaptıkları Konuşma",
+     "tccb_url": "https://tccb.gov.tr/konusmalar/353/36000/g-20-antalya-liderler-zirvesi-sonunda-basin-toplantisinda-yaptiklari-konusma",
+     "tccb_id": "36000"
+    }
+   ]
+  },
+  {
+   "grup": "Orman yangınları",
+   "n": 3,
+   "tccb_once_n": 1,
+   "tccb_once_yuzde": 33.3,
+   "ortalama_gecikme_gun": 2.7,
+   "ornekler": [
+    {
+     "hutbe_tarih": "16.08.2024",
+     "hutbe_baslik": "ÇEVREMİZ BİZE EMANETTİR",
+     "kelime": "orman yangınları",
+     "durum": "ONCU_HUTBE",
+     "gecikme_gun": 9,
+     "tccb_tarih": "25.08.2024",
+     "tccb_baslik": "Kabine Toplantısı’nın Ardından Yaptıkları Konuşma",
+     "tccb_url": "https://tccb.gov.tr/konusmalar/353/153340/kabine-toplantisi-nin-ardindan-yaptiklari-konusma",
+     "tccb_id": "153340"
+    },
+    {
+     "hutbe_tarih": "04.07.2025",
+     "hutbe_baslik": "GEÇMİŞE İBRETLE GELECEĞE FERASETLE BAKALIM",
+     "kelime": "orman yangınları",
+     "durum": "ONCU_TCCB",
+     "gecikme_gun": -4,
+     "tccb_tarih": "30.06.2025",
+     "tccb_baslik": "Kabine Toplantısı’nın Ardından Yaptıkları Konuşma",
+     "tccb_url": "https://tccb.gov.tr/konusmalar/353/160420/kabine-toplantisi-nin-ardindan-yaptiklari-konusma",
+     "tccb_id": "160420"
+    },
+    {
+     "hutbe_tarih": "21.07.2023",
+     "hutbe_baslik": "HİCRET: İDEALLER UĞRUNA ÇIKILAN KUTLU BİR SEFER",
+     "kelime": "orman yangınları",
+     "durum": "ONCU_HUTBE",
+     "gecikme_gun": 3,
+     "tccb_tarih": "24.07.2023",
+     "tccb_baslik": "Kabine Toplantısı’nın Ardından Yaptıkları Konuşma",
+     "tccb_url": "https://tccb.gov.tr/konusmalar/353/147899/kabine-toplantisi-nin-ardindan-yaptiklari-konusma",
+     "tccb_id": "147899"
+    }
+   ]
+  }
+ ]
+}

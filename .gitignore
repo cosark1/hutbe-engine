@@ -1,0 +1,33 @@
+# Ayrı git depoları — bu depoya dahil edilmez
+/quiz/
+/site-build/
+
+# Büyük, otomasyon için gereksiz eski yıl PDF'leri (yalnızca kök dizindekiler;
+# 2026/ klasörü -- güncel yıl, haftalık hutbe kaynağı -- HARİÇ TUTULMAZ)
+/*.pdf
+
+# Yedek dosyaları (proje boyunca .bak-* kalıbı kullanıldı)
+*.bak
+*.bak-*
+*.bak-*/
+
+# Otomasyon için gerekmeyen büyük araştırma alt setleri
+/arastirma/paralel_soylem/
+/arastirma/uae/
+/arastirma/ditib/
+/arastirma/yayim_paketi/
+/arastirma/kaldirilan_sessizlikler/
+/arastirma/__pycache__/
+
+# Eski/kullanılmayan büyük dosyalar
+/hutbe_dashboard.html
+/hutbe_work/
+
+# Windows/Google Drive senkron artıkları
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc

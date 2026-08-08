@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "hutbe-site",
+      "runtimeExecutable": "C:/Users/ummuhanbardak/AppData/Local/Programs/Python/Python312/python.exe",
+      "runtimeArgs": ["site/serve.py", "9075"],
+      "port": 9075
+    }
+  ]
+}

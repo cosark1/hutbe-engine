@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la \"/c/Users/ummuhanbardak/.claude/projects/G--Drive--m-kamuran-hutbe/memory/\" 2>&1)",
+      "Bash(python3 -c ' *)",
+      "PowerShell(Get-Command python -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Command py -ErrorAction SilentlyContinue)",
+      "PowerShell(python --version 2>&1)",
+      "PowerShell(winget install -e --id Python.Python.3.12 --accept-package-agreements --accept-source-agreements)",
+      "Bash(cp \"/c/Users/UMMUHA~1/AppData/Local/Temp/claude/G--Drive--m-kamuran-hutbe/4424fc6e-d6dc-4d90-a7ae-a92eb8d1c2dc/scratchpad/hutbe_2026_extracted_v2.json\" \"/c/Users/UMMUHA~1/AppData/Local/Temp/claude/G--Drive--m-kamuran-hutbe/4424fc6e-d6dc-4d90-a7ae-a92eb8d1c2dc/scratchpad/hutbe_2026_extracted.json\" *)"
+    ]
+  }
+}

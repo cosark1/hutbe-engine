@@ -1,0 +1,26 @@
+{
+ "ayet": {
+  "toplam": 243,
+  "dagilim": {
+   "dogru": 232,
+   "HATALI": 4,
+   "tur_hatasi": 3,
+   "alinti_bulunamadi": 1,
+   "dipnotsuz": 3
+  }
+ },
+ "hadis": {
+  "toplam": 640,
+  "dagilim": {
+   "dogru": 253,
+   "kirpilmis_duzeltildi": 299,
+   "HATALI": 13,
+   "eksik_tamamlandi": 47,
+   "tur_hatasi": 10,
+   "alinti_bulunamadi": 2,
+   "dipnotsuz": 2,
+   "cilt_temizlendi": 8,
+   "yazim_farki": 6
+  }
+ }
+}

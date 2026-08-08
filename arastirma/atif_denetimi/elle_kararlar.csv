@@ -1,0 +1,9 @@
+dosya,satir,karar,yeni_a,yeni_b,yeni_tarih,gerekce
+ayet,102,koru,Haşr,18,,"Alıntı Haşr 59/18'in mealidir; hutbede dipnot işaretçisi yakalanamadı, mevcut atıf doğru."
+ayet,164,koru,A'raf,96,,"Alıntı A'râf 7/96'nın mealidir; hutbede dipnotsuz geçiyor, mevcut atıf doğru."
+ayet,167,sil,,,,"Alıntı ayet değil: 03.02.2012 Mevlid-i Nebi hutbesinde yazarın Peygamber'e kendi hitabı (""Ey velâdeti yeryüzünün baharı..."" + salavat). Ahzâb 33/45-46 dipnotu metnin başka bir alıntısına ait."
+ayet,237,duzelt,Taha,114,,"Kapanış duası Tâhâ 20/114 (""Rabbi zidnî ilmen""). 20.11.2015 hutbesinde bu duanın dipnotu yok; komşu 1 nolu dipnot (İbrahim 14/3) yanlışlıkla atanmış."
+hadis,190,duzelt,Müslim,Sıyâm,,"Bölüm adı kırpılmış (Sıy -> Sıyâm). Alıntı atandığı hutbede bulunamadı; kaynak doğru, yalnızca yazım tamamlandı."
+hadis,306,sil,,,,"Alıntı hadis değil: 17.09.2021 hutbesinde açıkça ""Ahilik Müessesesi'nin şu öğütleri"" diye tanıtılan Ahi nasihatleri (""Eline, diline, beline sahip ol"")."
+hadis,359,duzelt,Buhârî,Zekât,,"Bölüm adı kırpılmış (Zek -> Zekât). Alıntı atandığı hutbede bulunamadı; kaynak doğru, yalnızca yazım tamamlandı."
+hadis,501,duzelt,İbn Mâce,İkâmetü’s-Salavât,29.05.2015,"Berat gecesi hadisi. Alıntı 29.05.2015 'TEVBEMİZ BERATIMIZ OLSUN' hutbesine ait; o hutbenin 2 nolu dipnotu: ""İbn Mâce, İkâmetü’s-Salavât, 191"". Eski değer (Tirmizî, Kıraat) yanlış, tarih de yanlıştı."

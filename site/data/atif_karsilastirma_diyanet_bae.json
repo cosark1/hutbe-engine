@@ -1,0 +1,432 @@
+{
+ "diyanet": {
+  "toplam_hutbe": 691,
+  "ayet_kayit": 648,
+  "hadis_kayit": 819,
+  "ayet_iceren_hutbe": 445,
+  "hadis_iceren_hutbe": 506,
+  "ayet_yuzde": 64.4,
+  "hadis_yuzde": 73.2,
+  "ayet_ortalama": 0.94,
+  "hadis_ortalama": 1.19
+ },
+ "bae": {
+  "toplam_hutbe": 218,
+  "ayet_kayit": 664,
+  "hadis_kayit": 477,
+  "ayet_iceren_hutbe": 119,
+  "hadis_iceren_hutbe": 125,
+  "ayet_yuzde": 54.6,
+  "hadis_yuzde": 57.3,
+  "ayet_ortalama": 3.05,
+  "hadis_ortalama": 2.19
+ },
+ "hadis_kaynak_karsilastirma": [
+  {
+   "kaynak": "Tirmizî",
+   "diyanet_sayi": 222,
+   "diyanet_yuzde": 27.1,
+   "bae_sayi": 79,
+   "bae_yuzde": 16.6
+  },
+  {
+   "kaynak": "Müslim",
+   "diyanet_sayi": 165,
+   "diyanet_yuzde": 20.1,
+   "bae_sayi": 97,
+   "bae_yuzde": 20.3
+  },
+  {
+   "kaynak": "Buhârî",
+   "diyanet_sayi": 199,
+   "diyanet_yuzde": 24.3,
+   "bae_sayi": 40,
+   "bae_yuzde": 8.4
+  },
+  {
+   "kaynak": "Ebû Dâvûd",
+   "diyanet_sayi": 64,
+   "diyanet_yuzde": 7.8,
+   "bae_sayi": 43,
+   "bae_yuzde": 9.0
+  },
+  {
+   "kaynak": "Buhârî ve Müslim (müttefekun aleyh)",
+   "diyanet_sayi": 0,
+   "diyanet_yuzde": 0.0,
+   "bae_sayi": 101,
+   "bae_yuzde": 21.2
+  },
+  {
+   "kaynak": "İbn Mâce",
+   "diyanet_sayi": 70,
+   "diyanet_yuzde": 8.5,
+   "bae_sayi": 24,
+   "bae_yuzde": 5.0
+  },
+  {
+   "kaynak": "Ahmed b. Hanbel (Müsned)",
+   "diyanet_sayi": 0,
+   "diyanet_yuzde": 0.0,
+   "bae_sayi": 64,
+   "bae_yuzde": 13.4
+  },
+  {
+   "kaynak": "Ahmed b. Hanbel",
+   "diyanet_sayi": 39,
+   "diyanet_yuzde": 4.8,
+   "bae_sayi": 0,
+   "bae_yuzde": 0.0
+  },
+  {
+   "kaynak": "Nesâi",
+   "diyanet_sayi": 19,
+   "diyanet_yuzde": 2.3,
+   "bae_sayi": 11,
+   "bae_yuzde": 2.3
+  },
+  {
+   "kaynak": "Dârimî",
+   "diyanet_sayi": 10,
+   "diyanet_yuzde": 1.2,
+   "bae_sayi": 0,
+   "bae_yuzde": 0.0
+  },
+  {
+   "kaynak": "Taberânî",
+   "diyanet_sayi": 5,
+   "diyanet_yuzde": 0.6,
+   "bae_sayi": 4,
+   "bae_yuzde": 0.8
+  },
+  {
+   "kaynak": "Beyhakî",
+   "diyanet_sayi": 8,
+   "diyanet_yuzde": 1.0,
+   "bae_sayi": 0,
+   "bae_yuzde": 0.0
+  },
+  {
+   "kaynak": "Edebü'l-Müfred (Buhârî)",
+   "diyanet_sayi": 0,
+   "diyanet_yuzde": 0.0,
+   "bae_sayi": 8,
+   "bae_yuzde": 1.7
+  },
+  {
+   "kaynak": "Hakim",
+   "diyanet_sayi": 6,
+   "diyanet_yuzde": 0.7,
+   "bae_sayi": 0,
+   "bae_yuzde": 0.0
+  },
+  {
+   "kaynak": "İbn Hibbân",
+   "diyanet_sayi": 0,
+   "diyanet_yuzde": 0.0,
+   "bae_sayi": 5,
+   "bae_yuzde": 1.0
+  },
+  {
+   "kaynak": "Kudâî",
+   "diyanet_sayi": 4,
+   "diyanet_yuzde": 0.5,
+   "bae_sayi": 0,
+   "bae_yuzde": 0.0
+  },
+  {
+   "kaynak": "Muvatta",
+   "diyanet_sayi": 4,
+   "diyanet_yuzde": 0.5,
+   "bae_sayi": 0,
+   "bae_yuzde": 0.0
+  },
+  {
+   "kaynak": "Münzirî",
+   "diyanet_sayi": 1,
+   "diyanet_yuzde": 0.1,
+   "bae_sayi": 0,
+   "bae_yuzde": 0.0
+  },
+  {
+   "kaynak": "İbn Hişâm",
+   "diyanet_sayi": 1,
+   "diyanet_yuzde": 0.1,
+   "bae_sayi": 0,
+   "bae_yuzde": 0.0
+  },
+  {
+   "kaynak": "Heysemî",
+   "diyanet_sayi": 1,
+   "diyanet_yuzde": 0.1,
+   "bae_sayi": 0,
+   "bae_yuzde": 0.0
+  },
+  {
+   "kaynak": "Süyûtî",
+   "diyanet_sayi": 1,
+   "diyanet_yuzde": 0.1,
+   "bae_sayi": 0,
+   "bae_yuzde": 0.0
+  },
+  {
+   "kaynak": "Hâkim (Müstedrek)",
+   "diyanet_sayi": 0,
+   "diyanet_yuzde": 0.0,
+   "bae_sayi": 1,
+   "bae_yuzde": 0.2
+  }
+ ],
+ "bae_en_cok_ayet": [
+  {
+   "sure_no": 2,
+   "ayet_no": 183,
+   "adet": 11,
+   "ornekler": [
+    {
+     "id": 109,
+     "yil": "2022",
+     "tarih": "2022-04-01",
+     "baslik": "شهر الخير أقبل"
+    },
+    {
+     "id": 111,
+     "yil": "2022",
+     "tarih": "2022-04-15",
+     "baslik": "وما أنفقتم من شيء فهو يخلفه"
+    },
+    {
+     "id": 112,
+     "yil": "2022",
+     "tarih": "2022-04-22",
+     "baslik": "العشر الأواخر من رمضان"
+    }
+   ]
+  },
+  {
+   "sure_no": 59,
+   "ayet_no": 18,
+   "adet": 11,
+   "ornekler": [
+    {
+     "id": 42,
+     "yil": "2023",
+     "tarih": "2023-01-06",
+     "baslik": "استثمار الوقت"
+    },
+    {
+     "id": 58,
+     "yil": "2023",
+     "tarih": "2023-04-21",
+     "baslik": "أعمال لها مغفرة"
+    },
+    {
+     "id": 60,
+     "yil": "2023",
+     "tarih": "2023-05-05",
+     "baslik": "في ذكرى توحيد القوات المسلحة"
+    }
+   ]
+  },
+  {
+   "sure_no": 2,
+   "ayet_no": 21,
+   "adet": 9,
+   "ornekler": [
+    {
+     "id": 97,
+     "yil": "2022",
+     "tarih": "2022-01-14",
+     "baslik": "كيف نستثمر موسم الشتاء؟"
+    },
+    {
+     "id": 113,
+     "yil": "2022",
+     "tarih": "2022-04-29",
+     "baslik": "الأعمال بخواتيمها"
+    },
+    {
+     "id": 55,
+     "yil": "2023",
+     "tarih": "2023-03-31",
+     "baslik": "القرآن والصيام"
+    }
+   ]
+  },
+  {
+   "sure_no": 2,
+   "ayet_no": 185,
+   "adet": 9,
+   "ornekler": [
+    {
+     "id": 110,
+     "yil": "2022",
+     "tarih": "2022-04-08",
+     "baslik": "إنه لقرآن كريم"
+    },
+    {
+     "id": 113,
+     "yil": "2022",
+     "tarih": "2022-04-29",
+     "baslik": "الأعمال بخواتيمها"
+    },
+    {
+     "id": 53,
+     "yil": "2023",
+     "tarih": "2023-03-17",
+     "baslik": "رمضان خير وإيمان"
+    }
+   ]
+  },
+  {
+   "sure_no": 16,
+   "ayet_no": 128,
+   "adet": 8,
+   "ornekler": [
+    {
+     "id": 101,
+     "yil": "2022",
+     "tarih": "2022-02-11",
+     "baslik": "البيئة أمانة ومسؤولية"
+    },
+    {
+     "id": 65,
+     "yil": "2023",
+     "tarih": "2023-06-09",
+     "baslik": "من أحب الأعمال إلى الله"
+    },
+    {
+     "id": 66,
+     "yil": "2023",
+     "tarih": "2023-06-16",
+     "baslik": "أيام مباركات"
+    }
+   ]
+  },
+  {
+   "sure_no": 29,
+   "ayet_no": 45,
+   "adet": 8,
+   "ornekler": [
+    {
+     "id": 26,
+     "yil": "2024",
+     "tarih": "2024-02-02",
+     "baslik": "معراج النبي صلى الله عليه وسلم"
+    },
+    {
+     "id": 25,
+     "yil": "2024",
+     "tarih": "2024-02-09",
+     "baslik": "الاهتمام الأسري"
+    },
+    {
+     "id": 24,
+     "yil": "2024",
+     "tarih": "2024-02-16",
+     "baslik": "يا عمار المساجد"
+    }
+   ]
+  },
+  {
+   "sure_no": 7,
+   "ayet_no": 31,
+   "adet": 6,
+   "ornekler": [
+    {
+     "id": 106,
+     "yil": "2022",
+     "tarih": "2022-03-11",
+     "baslik": "واذكروا نعمة الله عليكم"
+    },
+    {
+     "id": 44,
+     "yil": "2023",
+     "tarih": "2023-01-20",
+     "baslik": "الحفاظ على نعم الله في الأرض"
+    },
+    {
+     "id": 54,
+     "yil": "2023",
+     "tarih": "2023-03-24",
+     "baslik": "أخلاق الصائم"
+    }
+   ]
+  },
+  {
+   "sure_no": 11,
+   "ayet_no": 61,
+   "adet": 5,
+   "ornekler": [
+    {
+     "id": 101,
+     "yil": "2022",
+     "tarih": "2022-02-11",
+     "baslik": "البيئة أمانة ومسؤولية"
+    },
+    {
+     "id": 44,
+     "yil": "2023",
+     "tarih": "2023-01-20",
+     "baslik": "الحفاظ على نعم الله في الأرض"
+    },
+    {
+     "id": 92,
+     "yil": "2023",
+     "tarih": "2023-12-08",
+     "baslik": "من قيم الاستدامة في القرآن"
+    }
+   ]
+  },
+  {
+   "sure_no": 6,
+   "ayet_no": 155,
+   "adet": 5,
+   "ornekler": [
+    {
+     "id": 108,
+     "yil": "2022",
+     "tarih": "2022-03-25",
+     "baslik": "سورة الرحمن"
+    },
+    {
+     "id": 110,
+     "yil": "2022",
+     "tarih": "2022-04-08",
+     "baslik": "إنه لقرآن كريم"
+    },
+    {
+     "id": 55,
+     "yil": "2023",
+     "tarih": "2023-03-31",
+     "baslik": "القرآن والصيام"
+    }
+   ]
+  },
+  {
+   "sure_no": 2,
+   "ayet_no": 2,
+   "adet": 5,
+   "ornekler": [
+    {
+     "id": 45,
+     "yil": "2023",
+     "tarih": "2023-01-27",
+     "baslik": "أفلا يتدبرون القرآن"
+    },
+    {
+     "id": 55,
+     "yil": "2023",
+     "tarih": "2023-03-31",
+     "baslik": "القرآن والصيام"
+    },
+    {
+     "id": 21,
+     "yil": "2024",
+     "tarih": "2024-03-22",
+     "baslik": "رمضان شهر القرآن الكريم"
+    }
+   ]
+  }
+ ]
+}

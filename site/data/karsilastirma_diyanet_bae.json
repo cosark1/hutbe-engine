@@ -1,0 +1,617 @@
+{
+ "diyanet_toplam": 691,
+ "bae_toplam": 232,
+ "kategoriler": [
+  {
+   "kategori": "İman, Tevhid ve Ahiret",
+   "diyanet_sayi": 72,
+   "diyanet_yuzde": 10.4,
+   "bae_sayi": 42,
+   "bae_yuzde": 18.1,
+   "delta": 7.7,
+   "diyanet_ornekler": [
+    {
+     "tarih": "19.02.2016",
+     "baslik": "PEYGAMBERLER ALLAH’IN KUTLU ELÇİLERİDİR"
+    },
+    {
+     "tarih": "13.06.2014",
+     "baslik": "İMANIN ŞUBELERİ"
+    },
+    {
+     "tarih": "12.04.2019",
+     "baslik": "İMANIN HAYATIMIZDAKİ YANSIMALARI"
+    }
+   ],
+   "bae_ornekler": [
+    {
+     "id": "28",
+     "yil": "2024",
+     "tarih": "2024-01-19",
+     "baslik": "ومن يؤت الحكمة فقد أوتي خيرا كثيرا"
+    },
+    {
+     "id": "95",
+     "yil": "2023",
+     "tarih": "2023-12-29",
+     "baslik": "ولتنظر نفس ما قدمت لغد"
+    },
+    {
+     "id": "59",
+     "yil": "2023",
+     "tarih": "2023-04-28",
+     "baslik": "مرضاة الله عز وجل"
+    }
+   ]
+  },
+  {
+   "kategori": "Toplumsal Dayanışma, Merhamet ve Kardeşlik",
+   "diyanet_sayi": 69,
+   "diyanet_yuzde": 10.0,
+   "bae_sayi": 8,
+   "bae_yuzde": 3.4,
+   "delta": -6.6,
+   "diyanet_ornekler": [
+    {
+     "tarih": "22.04.2016",
+     "baslik": "TEVHİD VE VAHDETİN ÖNCÜSÜ MÜMİNLER"
+    },
+    {
+     "tarih": "31.01.2014",
+     "baslik": "NASIL BİR KARDEŞLİK?"
+    },
+    {
+     "tarih": "05.04.2013",
+     "baslik": "MÜKERREM BİR VARLIK OLARAK İNSAN"
+    }
+   ],
+   "bae_ornekler": [
+    {
+     "id": "68",
+     "yil": "2023",
+     "tarih": "2023-06-30",
+     "baslik": "أحب لك ما أحب لنفسي"
+    },
+    {
+     "id": "190",
+     "yil": "2025",
+     "tarih": "2025-06-13",
+     "baslik": "يوصيني بالجار"
+    },
+    {
+     "id": "135",
+     "yil": "2017",
+     "tarih": "2017-01-06",
+     "baslik": "إطعام الطعام"
+    }
+   ]
+  },
+  {
+   "kategori": "Kandiller, Muharrem ve Mübarek Geceler",
+   "diyanet_sayi": 57,
+   "diyanet_yuzde": 8.2,
+   "bae_sayi": 7,
+   "bae_yuzde": 3.0,
+   "delta": -5.2,
+   "diyanet_ornekler": [
+    {
+     "tarih": "01.03.2019",
+     "baslik": "BEREKET MEVSİMİ: ÜÇ AYLAR"
+    },
+    {
+     "tarih": "05.03.2021",
+     "baslik": "İSRÂ VE MİRAÇ"
+    },
+    {
+     "tarih": "24.01.2025",
+     "baslik": "MİRACIN HEDİYESİ, DİNİMİZİN DİREĞİ NAMAZ"
+    }
+   ],
+   "bae_ornekler": [
+    {
+     "id": "66",
+     "yil": "2023",
+     "tarih": "2023-06-16",
+     "baslik": "أيام مباركات"
+    },
+    {
+     "id": "49",
+     "yil": "2023",
+     "tarih": "2023-02-17",
+     "baslik": "الإسراء والمعراج رحلة سلام"
+    },
+    {
+     "id": "241",
+     "yil": "2026",
+     "tarih": "2026-05-22",
+     "baslik": "اغتنام العشر"
+    }
+   ]
+  },
+  {
+   "kategori": "Ahlak, Erdem ve Söz",
+   "diyanet_sayi": 64,
+   "diyanet_yuzde": 9.3,
+   "bae_sayi": 32,
+   "bae_yuzde": 13.8,
+   "delta": 4.5,
+   "diyanet_ornekler": [
+    {
+     "tarih": "15.01.2016",
+     "baslik": "İMTİHANIN ADI: FİTNE"
+    },
+    {
+     "tarih": "04.09.2015",
+     "baslik": "KARDEŞLİĞİ KÖRELTEN AFETLER: TECESSÜS, SU-İ ZAN…"
+    },
+    {
+     "tarih": "19.07.2024",
+     "baslik": "MÜSLÜMAN TAKVA SAHİBİDİR"
+    }
+   ],
+   "bae_ornekler": [
+    {
+     "id": "130",
+     "yil": "2016",
+     "tarih": "2016-01-08",
+     "baslik": "تحمل المسؤولية"
+    },
+    {
+     "id": "122",
+     "yil": "2009",
+     "tarih": "2009-11-06",
+     "baslik": "الْعَفْوُ وَالتَّسَامُحُ"
+    },
+    {
+     "id": "144",
+     "yil": "2016",
+     "tarih": "2016-03-04",
+     "baslik": "ادفع بالتي هي أحسن"
+    }
+   ]
+  },
+  {
+   "kategori": "Ekonomik Hayat: Kazanç, Zekat ve İsraf",
+   "diyanet_sayi": 44,
+   "diyanet_yuzde": 6.4,
+   "bae_sayi": 5,
+   "bae_yuzde": 2.2,
+   "delta": -4.2,
+   "diyanet_ornekler": [
+    {
+     "tarih": "17.09.2021",
+     "baslik": "TİCARET HAYATINDA HELAL HARAM BİLİNCİ"
+    },
+    {
+     "tarih": "17.08.2018",
+     "baslik": "SADAKA-İ CÂRİYE"
+    },
+    {
+     "tarih": "06.03.2026",
+     "baslik": "ZEKÂT VE FITIR SADAKASI"
+    }
+   ],
+   "bae_ornekler": [
+    {
+     "id": "174",
+     "yil": "2025",
+     "tarih": "2025-03-07",
+     "baslik": "وآتوا الزكاة"
+    },
+    {
+     "id": "85",
+     "yil": "2023",
+     "tarih": "2023-10-20",
+     "baslik": "استدامة النعم وترشيد استهلاكها"
+    },
+    {
+     "id": "225",
+     "yil": "2026",
+     "tarih": "2026-02-06",
+     "baslik": "﴿والذين هم للزكاة فاعلون﴾"
+    }
+   ]
+  },
+  {
+   "kategori": "Peygamberimiz ve Ashab",
+   "diyanet_sayi": 21,
+   "diyanet_yuzde": 3.0,
+   "bae_sayi": 15,
+   "bae_yuzde": 6.5,
+   "delta": 3.5,
+   "diyanet_ornekler": [
+    {
+     "tarih": "22.10.2021",
+     "baslik": "ONUN BİZE MİRASI, EŞSİZ VEFASI"
+    },
+    {
+     "tarih": "10.01.2014",
+     "baslik": "MEVLİD-İ NEBİ"
+    },
+    {
+     "tarih": "01.11.2013",
+     "baslik": "RAHMET’İN HİCRETİ"
+    }
+   ],
+   "bae_ornekler": [
+    {
+     "id": "141",
+     "yil": "2024",
+     "tarih": "2024-09-13",
+     "baslik": "ورفعنا لك ذكرك"
+    },
+    {
+     "id": "47",
+     "yil": "2023",
+     "tarih": "2023-02-03",
+     "baslik": "أخلاق الأنبياء عليهم السلام"
+    },
+    {
+     "id": "40",
+     "yil": "2024",
+     "tarih": "2024-07-05",
+     "baslik": "هجرة النبي صلى الله عليه وسلم"
+    }
+   ]
+  },
+  {
+   "kategori": "İslam Coğrafyası ve Küresel Meseleler",
+   "diyanet_sayi": 24,
+   "diyanet_yuzde": 3.5,
+   "bae_sayi": 0,
+   "bae_yuzde": 0.0,
+   "delta": -3.5,
+   "diyanet_ornekler": [
+    {
+     "tarih": "20.10.2023",
+     "baslik": "RAHMET VE SEKİNET MÜJDESİ: İNŞİRÂH SURESİ"
+    },
+    {
+     "tarih": "21.05.2021",
+     "baslik": "ZULÜM CEZASIZ KALMAZ"
+    },
+    {
+     "tarih": "08.09.2017",
+     "baslik": "MAZLUMUN YANINDA YER ALMAK"
+    }
+   ],
+   "bae_ornekler": []
+  },
+  {
+   "kategori": "Ramazan, Oruç ve Bayramlar",
+   "diyanet_sayi": 70,
+   "diyanet_yuzde": 10.1,
+   "bae_sayi": 31,
+   "bae_yuzde": 13.4,
+   "delta": 3.3,
+   "diyanet_ornekler": [
+    {
+     "tarih": "21.08.2018",
+     "baslik": "KURBAN BAYRAMI"
+    },
+    {
+     "tarih": "24.05.2019",
+     "baslik": "KARDEŞLİĞİMİZ ZEKÂT VE FITIR SADAKASIYLA BEREKETLENSİN"
+    },
+    {
+     "tarih": "06.06.2025",
+     "baslik": "KURBAN BAYRAMI: ALLAH'IN KULLARINA İHSAN VE İKRAMI"
+    }
+   ],
+   "bae_ornekler": [
+    {
+     "id": "170",
+     "yil": "2025",
+     "tarih": "2025-02-07",
+     "baslik": "شعبان تهيؤ لرمضان"
+    },
+    {
+     "id": "120",
+     "yil": "2009",
+     "tarih": "2009-09-04",
+     "baslik": "رَمَضَانُ شَهْرُ الصَّبْرِ"
+    },
+    {
+     "id": "15",
+     "yil": "2024",
+     "tarih": "2024-04-10",
+     "baslik": "خطبة عيد الفطر"
+    }
+   ]
+  },
+  {
+   "kategori": "Afet, Kriz ve Sağlık",
+   "diyanet_sayi": 23,
+   "diyanet_yuzde": 3.3,
+   "bae_sayi": 3,
+   "bae_yuzde": 1.3,
+   "delta": -2.0,
+   "diyanet_ornekler": [
+    {
+     "tarih": "03.03.2023",
+     "baslik": "MÜSLÜMANLAR BİRBİRİNİN UMUDUDUR"
+    },
+    {
+     "tarih": "16.08.2019",
+     "baslik": "GÜVENLİ BİR HAYAT İÇİN AFETLERE HAZIR OLALIM"
+    },
+    {
+     "tarih": "10.02.2023",
+     "baslik": "GÜN, MİLLETÇE KENETLENME GÜNÜDÜR"
+    }
+   ],
+   "bae_ornekler": [
+    {
+     "id": "247",
+     "yil": "2026",
+     "tarih": "2026-06-26",
+     "baslik": "آفة المخدرات"
+    },
+    {
+     "id": "13",
+     "yil": "2024",
+     "tarih": "2024-04-19",
+     "baslik": "‌واشكروا ‌نعمت الله"
+    },
+    {
+     "id": "32",
+     "yil": "2024",
+     "tarih": "2024-06-21",
+     "baslik": "المخدرات جريمة"
+    }
+   ]
+  },
+  {
+   "kategori": "Aile, Çocuk ve Nesil",
+   "diyanet_sayi": 58,
+   "diyanet_yuzde": 8.4,
+   "bae_sayi": 23,
+   "bae_yuzde": 9.9,
+   "delta": 1.5,
+   "diyanet_ornekler": [
+    {
+     "tarih": "20.04.2018",
+     "baslik": "YARINLARIMIZIN ÜMİDİ ÇOCUKLARIMIZ"
+    },
+    {
+     "tarih": "17.05.2024",
+     "baslik": "AİLEMİZ: HUZUR VE GÜVEN KAYNAĞIMIZ"
+    },
+    {
+     "tarih": "19.05.2023",
+     "baslik": "GENÇLERİMİZ, MİLLİ VE MANEVİ DEĞERLERİMİZİN EMANETÇİSİDİR"
+    }
+   ],
+   "bae_ornekler": [
+    {
+     "id": "246",
+     "yil": "2026",
+     "tarih": "2026-06-19",
+     "baslik": "رعاية كبارنا"
+    },
+    {
+     "id": "213",
+     "yil": "2025",
+     "tarih": "2025-11-14",
+     "baslik": "عام الأسرة"
+    },
+    {
+     "id": "171",
+     "yil": "2025",
+     "tarih": "2025-02-14",
+     "baslik": "تقدير الزوج"
+    }
+   ]
+  },
+  {
+   "kategori": "İbadet ve Kulluk",
+   "diyanet_sayi": 60,
+   "diyanet_yuzde": 8.7,
+   "bae_sayi": 17,
+   "bae_yuzde": 7.3,
+   "delta": -1.4,
+   "diyanet_ornekler": [
+    {
+     "tarih": "02.06.2023",
+     "baslik": "KALPLER ALLAH'I ZİKRETMEKLE HUZURA KAVUŞUR"
+    },
+    {
+     "tarih": "10.01.2020",
+     "baslik": "PEYGAMBERİMİZİN DİLİNDEN DUALAR"
+    },
+    {
+     "tarih": "11.01.2019",
+     "baslik": "İNSANIN KEMAL YOLCULUĞU: İSLAM, İMAN VE İHSAN"
+    }
+   ],
+   "bae_ornekler": [
+    {
+     "id": "88",
+     "yil": "2023",
+     "tarih": "2023-11-10",
+     "baslik": "وقال ربكم ادعوني أستجب لكم"
+    },
+    {
+     "id": "63",
+     "yil": "2023",
+     "tarih": "2023-05-26",
+     "baslik": "دعاء الملائكة"
+    },
+    {
+     "id": "100",
+     "yil": "2022",
+     "tarih": "2022-02-04",
+     "baslik": "‌أعمال لوجه الله"
+    }
+   ]
+  },
+  {
+   "kategori": "Vatan, Millet ve Tarih",
+   "diyanet_sayi": 52,
+   "diyanet_yuzde": 7.5,
+   "bae_sayi": 20,
+   "bae_yuzde": 8.6,
+   "delta": 1.1,
+   "diyanet_ornekler": [
+    {
+     "tarih": "14.07.2017",
+     "baslik": "SALÂLARIN ŞAHİT OLDUĞU DİRENİŞ: 15 TEMMUZ"
+    },
+    {
+     "tarih": "24.07.2020",
+     "baslik": "AYASOFYA: FETHİN NİŞANESİ, FATİH'İN EMANETİ"
+    },
+    {
+     "tarih": "25.08.2023",
+     "baslik": "ALLAH'IN YARDIMI AZİZ MİLLETİMİZLE BERABERDİR"
+    }
+   ],
+   "bae_ornekler": [
+    {
+     "id": "152",
+     "yil": "2024",
+     "tarih": "2024-11-01",
+     "baslik": "الطفولة المبكرة"
+    },
+    {
+     "id": "138",
+     "yil": "2016",
+     "tarih": "2016-02-12",
+     "baslik": "الشورى و المجلس الوطني"
+    },
+    {
+     "id": "9",
+     "yil": "2024",
+     "tarih": "2024-05-03",
+     "baslik": "الدفاع عن الوطن واجب مقدس"
+    }
+   ]
+  },
+  {
+   "kategori": "Eğitim, Teknoloji, Çevre ve Toplumsal Değişim",
+   "diyanet_sayi": 22,
+   "diyanet_yuzde": 3.2,
+   "bae_sayi": 10,
+   "bae_yuzde": 4.3,
+   "delta": 1.1,
+   "diyanet_ornekler": [
+    {
+     "tarih": "23.09.2016",
+     "baslik": "ALLAH’IM! İLİMLE YÜCELT BİZİ!"
+    },
+    {
+     "tarih": "09.09.2022",
+     "baslik": "İLİM BİR NURDUR"
+    },
+    {
+     "tarih": "20.05.2016",
+     "baslik": "MAHREMİYETİ YİTİRMEK MAHRUMİYETTİR"
+    }
+   ],
+   "bae_ornekler": [
+    {
+     "id": "201",
+     "yil": "2025",
+     "tarih": "2025-08-29",
+     "baslik": "مجتمع العلم"
+    },
+    {
+     "id": "44",
+     "yil": "2023",
+     "tarih": "2023-01-20",
+     "baslik": "الحفاظ على نعم الله في الأرض"
+    },
+    {
+     "id": "77",
+     "yil": "2023",
+     "tarih": "2023-08-25",
+     "baslik": "مرحبا بطالب العلم"
+    }
+   ]
+  },
+  {
+   "kategori": "Kur'an-ı Kerim",
+   "diyanet_sayi": 16,
+   "diyanet_yuzde": 2.3,
+   "bae_sayi": 8,
+   "bae_yuzde": 3.4,
+   "delta": 1.1,
+   "diyanet_ornekler": [
+    {
+     "tarih": "12.06.2015",
+     "baslik": "KUR’AN AYINDA KUR’AN’LA BULUŞALIM!"
+    },
+    {
+     "tarih": "27.01.2023",
+     "baslik": "EN BÜYÜK MUCİZE KUR'AN-I KERİM"
+    },
+    {
+     "tarih": "10.06.2016",
+     "baslik": "KUR’AN AYI RAMAZAN"
+    }
+   ],
+   "bae_ornekler": [
+    {
+     "id": "108",
+     "yil": "2022",
+     "tarih": "2022-03-25",
+     "baslik": "سورة الرحمن"
+    },
+    {
+     "id": "45",
+     "yil": "2023",
+     "tarih": "2023-01-27",
+     "baslik": "أفلا يتدبرون القرآن"
+    },
+    {
+     "id": "110",
+     "yil": "2022",
+     "tarih": "2022-04-08",
+     "baslik": "إنه لقرآن كريم"
+    }
+   ]
+  },
+  {
+   "kategori": "Sabır, Tevekkül ve Manevi Olgunluk",
+   "diyanet_sayi": 39,
+   "diyanet_yuzde": 5.6,
+   "bae_sayi": 11,
+   "bae_yuzde": 4.7,
+   "delta": -0.9,
+   "diyanet_ornekler": [
+    {
+     "tarih": "03.07.2020",
+     "baslik": "SABRIN SONU SELAMETTİR"
+    },
+    {
+     "tarih": "27.03.2026",
+     "baslik": "TEVEKKÜL"
+    },
+    {
+     "tarih": "28.12.2018",
+     "baslik": "BİR ÖMÜR SORUMLULUK BİLİNCİYLE YAŞAMAK"
+    }
+   ],
+   "bae_ornekler": [
+    {
+     "id": "97",
+     "yil": "2022",
+     "tarih": "2022-01-14",
+     "baslik": "كيف نستثمر موسم الشتاء؟"
+    },
+    {
+     "id": "221",
+     "yil": "2026",
+     "tarih": "2026-01-09",
+     "baslik": "يعجبني ‌الفأل الحسن"
+    },
+    {
+     "id": "222",
+     "yil": "2026",
+     "tarih": "2026-01-16",
+     "baslik": "يوم العزم"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diyanet Hutbeleri İçerik Analizi (2011-2026)</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="hrow">
+    <div>
+      <h1>Diyanet Hutbeleri İçerik Analizi</h1>
+      <p>2011-2026 arası 711 hutbe · 15 veri-odaklı ana tema (çoklu etiketli) · gerçek özet + anahtar kelime veritabanı · ayet/hadis/sahabe tam metin atıfları</p>
+    </div>
+    <div class="header-actions">
+      <a class="icon-btn" href="https://kahutbe.com" target="_blank" rel="noopener" title="Bu korpusla oynayın: haftalık hutbe quiz'i">🎯 Kahutbe'de Oyna</a>
+      <a class="icon-btn" href="https://doi.org/10.5281/zenodo.21851010" target="_blank" rel="noopener" title="Açık veri seti (Zenodo, CC BY 4.0)">📦 Veri (DOI)</a>
+      <button class="theme-toggle" id="theme-toggle">🌙 Karanlık mod</button>
+    </div>
+  </div>
+</header>
+
+<nav class="section-nav">
+  <div class="nrow">
+    <button data-target="sec-overview" class="active">Genel Bakış</button>
+    <button data-target="sec-temalar">Temalar</button>
+    <button data-target="sec-kaynaklar">Kaynaklar</button>
+    <button data-target="sec-arsiv">Hutbe Ara</button>
+    <button data-target="sec-bae">BAE Karşılaştırma</button>
+  </div>
+</nav>
+
+<div class="container">
+
+  <button class="mobile-filter-toggle icon-btn" id="mobile-filter-toggle" style="color:var(--ink);border-color:var(--border);">Filtreler ▾</button>
+  <div class="filters-bar" id="filters-bar">
+    <div class="filter-group"><label>Yıl (min)</label><select id="f-year-min"></select></div>
+    <div class="filter-group"><label>Yıl (maks)</label><select id="f-year-max"></select></div>
+    <div class="filter-group"><label>Ana Tema</label><select id="f-category"><option value="all">Tümü</option></select></div>
+  </div>
+
+  <section class="kpi-row" id="kpi-row">
+    <div class="kpi-card"><div class="kpi-label">Toplam Hutbe</div><div class="kpi-value" id="kpi-total">-</div><div class="kpi-sub" id="kpi-total-sub">-</div></div>
+    <div class="kpi-card"><div class="kpi-label">En Sık Tema</div><div class="kpi-value" id="kpi-topcat" style="font-size:17px;">-</div><div class="kpi-sub" id="kpi-topcat-sub">-</div></div>
+    <div class="kpi-card"><div class="kpi-label">Tespit Edilen Ayet</div><div class="kpi-value" id="kpi-ayet">-</div><div class="kpi-sub">Tam metinle eşleşen</div></div>
+    <div class="kpi-card"><div class="kpi-label">Tespit Edilen Hadis</div><div class="kpi-value" id="kpi-hadis">-</div><div class="kpi-sub">Tam metinle eşleşen</div></div>
+    <div class="kpi-card"><div class="kpi-label">Benzersiz Anahtar Kelime</div><div class="kpi-value" id="kpi-keywords">-</div><div class="kpi-sub" id="kpi-keywords-sub">-</div></div>
+  </section>
+
+  <!-- ================= GENEL BAKIŞ ================= -->
+  <section class="section" id="sec-overview">
+    <h2>Genel Bakış</h2>
+    <div class="section-sub">Yıllık ve haftalık dağılım, genel tema kırılımı, söylem metrikleri</div>
+
+    <div class="card">
+      <h3>Haftalık Tema Yoğunluğu (2011-2026, ISO hafta bazında)</h3>
+      <div class="heatmap-months" id="heatmap-months"></div>
+      <div class="heatmap-wrap"><div class="heatmap" id="heatmap"></div></div>
+      <div id="heatmap-legend" style="font-size:11px;color:var(--ink-soft);margin-top:10px;"></div>
+      <div id="heatmap-tooltip"></div>
+    </div>
+
+    <div class="card"><h3>Yıllara Göre Tema Dağılımı</h3><canvas id="chart-yearly" style="max-height:420px;"></canvas></div>
+
+    <div class="grid-2">
+      <div class="card"><h3>Genel Tema Dağılımı</h3><canvas id="chart-doughnut"></canvas></div>
+      <div class="card"><h3>En Çok Atıf Yapılan 15 Sure</h3><canvas id="chart-suras"></canvas></div>
+    </div>
+    <div class="grid-2">
+      <div class="card"><h3>En Çok Tekrarlanan 20 Ayet</h3><canvas id="chart-verses"></canvas></div>
+      <div class="card"><h3>En Çok Atıf Yapılan Hadis Kaynakları</h3><canvas id="chart-hadis-kaynak"></canvas></div>
+    </div>
+
+    <div class="card">
+      <h3>Takvim–Gündem Bağlantısı</h3>
+      <div class="section-sub" style="margin-bottom:12px;">Büyük olaylar/dini günler ile en yakın (±10 gün) hutbe eşleştirmesi</div>
+      <div id="calendar-list"></div>
+    </div>
+
+    <div class="card">
+      <h3>Bağlam Zaman Çizelgesi (2011-2026)</h3>
+      <div class="section-sub" style="margin-bottom:12px;">Dini takvim, seçim/referandum ve kriz/afet olaylarının hutbe haftalarıyla eşleşmesi — bir bağlam seçin, o dönemin tema dağılımını görün</div>
+      <div class="heatmap-months" id="timeline-months"></div>
+      <div class="heatmap-wrap"><div class="heatmap" id="timeline-grid"></div></div>
+      <div id="timeline-legend" style="font-size:11px;color:var(--ink-soft);margin-top:10px;"></div>
+      <div id="timeline-tooltip"></div>
+      <div class="timeline-select-row">
+        <label style="font-size:12px;color:var(--ink-soft);">Bağlam seç:</label>
+        <select id="timeline-select"></select>
+      </div>
+      <div id="timeline-summary">Bir bağlam seçtiğinizde, o dönemdeki hutbelerin tema dağılımı burada görünür.</div>
+      <canvas id="timeline-chart" style="max-height:280px;"></canvas>
+    </div>
+
+    <div class="grid-2">
+      <div class="card"><h3>Yıllara Göre Ortalama Hutbe/Cümle Uzunluğu</h3><canvas id="chart-metrics-len"></canvas></div>
+      <div class="card"><h3>Kelime Çeşitliliği Trendi (Type-Token Oranı)</h3><canvas id="chart-metrics-ttr"></canvas></div>
+    </div>
+
+    <div class="card">
+      <h3>Hutbe ile Resmi Söylem Karşılaştırması (İP-6)</h3>
+      <div class="section-sub" style="margin-bottom:12px;">Hutbe hükümet gündemini öncülüyor mu, izliyor mu? TCCB (Cumhurbaşkanlığı) konuşmaları (2014-2026, 1999 konuşma) ile hutbelerin ortak anahtar kelimeleri, ±30 günlük pencerede karşılaştırılıyor (bkz. İP-4'teki kriz-olayı ±28 gün penceresiyle tutarlı)</div>
+      <div class="kpi-row" id="lag-stats" style="margin-bottom:14px;"></div>
+      <div class="note-box" id="lag-caveat" style="margin-bottom:16px;"></div>
+      <div id="lag-olay-table" style="overflow-x:auto;"></div>
+    </div>
+
+    <div class="note-box" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;">
+      <span><b>Karşılaştırmalı korpus:</b> Bu hutbeler Birleşik Arap Emirlikleri (Awqaf) hutbeleriyle de karşılaştırıldı — kategori dağılımı, ayet/hadis yoğunluğu, sahabe atıfları ve karşılaştırmalı kelime arama ayrı sekmede.</span>
+      <button class="load-more-btn" id="goto-bae-tab" style="white-space:nowrap;">BAE Karşılaştırma sekmesine git →</button>
+    </div>
+  </section>
+
+  <!-- ================= BAE KARŞILAŞTIRMA (İP-7) ================= -->
+  <section class="section" id="sec-bae" style="display:none;">
+    <h2>BAE (Awqaf) Karşılaştırması</h2>
+    <div class="section-sub">Birleşik Arap Emirlikleri Genel Din İşleri, Vakıflar ve Zekat Kurumu'nun (Awqaf) resmi cuma hutbeleri, Diyanet korpusuyla aynı kod kitabı (v1.4) kullanılarak etiketlendi ve karşılaştırıldı — İP-7 karşılaştırmalı ülke korpusu çalışması</div>
+
+    <div class="kpi-row" id="bae-ozet-stats"></div>
+
+    <div class="card">
+      <h3>Öne Çıkan Bulgular</h3>
+      <div class="section-sub" style="margin-bottom:14px;">Bir bulguya tıklayın, ilgili bölüme gidin</div>
+      <div class="bae-bulgu-grid" id="bae-bulgular"></div>
+    </div>
+
+    <div class="card" id="bae-kategori-karti">
+      <h3>Tema Dağılımı Karşılaştırması</h3>
+      <div class="section-sub" style="margin-bottom:14px;">15 kategorinin her birinde iki korpusun payı (kendi toplamlarının yüzdesi olarak). En büyük farktan en küçüğe sıralı — bir satıra tıklayın, iki taraftan örnek hutbeleri okuyun.</div>
+      <div id="cmp-kategori-list"></div>
+    </div>
+
+    <div class="card" id="bae-atif-karti">
+      <h3>Ayet ve Hadis Kullanımı</h3>
+      <div class="section-sub" style="margin-bottom:12px;">İki korpustaki alıntı yoğunluğu ve hadis kaynak dağılımı</div>
+      <div class="kpi-row" id="atif-stats" style="margin-bottom:14px;"></div>
+      <div class="note-box" id="atif-not" style="margin-bottom:16px;"></div>
+      <div class="grid-2">
+        <div><div class="section-sub" style="margin-bottom:8px;">BAE'de en çok tekrarlanan ayetler</div><div id="atif-ayet-table" style="overflow-x:auto;"></div></div>
+        <div><div class="section-sub" style="margin-bottom:8px;">Hadis kaynak dağılımı</div><div id="atif-hadis-table" style="overflow-x:auto;"></div></div>
+      </div>
+    </div>
+
+    <div class="card" id="bae-sahabe-karti">
+      <h3>Sahabe İsimleri</h3>
+      <div class="section-sub" style="margin-bottom:12px;">Hangi sahabe hangi korpusta daha sık örnek gösteriliyor</div>
+      <div class="note-box" id="sahabe-not" style="margin-bottom:16px;"></div>
+      <div id="sahabe-table" style="overflow-x:auto;"></div>
+    </div>
+
+    <div class="card" id="bae-arama-karti">
+      <h3>Karşılaştırmalı Kelime Arama</h3>
+      <div class="section-sub" style="margin-bottom:12px;">Bir kelime girin, iki korpusta da geçtiği hutbeleri yan yana okuyun. Diyanet Türkçe, BAE İngilizce — otomatik çeviri yapılmıyor, her korpusu kendi dilinde arayın (ör. "Gazze" için Diyanet'te <code>Gazze</code>, BAE'de <code>Gaza</code>).</div>
+      <div style="display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap;align-items:center;">
+        <input type="text" id="ka-input" placeholder="Aranacak kelime…" style="flex:1;min-width:200px;padding:9px 12px;border:1px solid var(--border);border-radius:8px;background:var(--bg-card);color:var(--ink);font-size:14px;">
+        <span style="font-size:11.5px;color:var(--ink-soft);">Hazır:</span>
+        <button class="load-more-btn ka-preset" data-q="Gazze" style="padding:6px 12px;font-size:12px;">Gazze</button>
+        <button class="load-more-btn ka-preset" data-q="Gaza" style="padding:6px 12px;font-size:12px;">Gaza</button>
+        <button class="load-more-btn ka-preset" data-q="zekat" style="padding:6px 12px;font-size:12px;">zekat</button>
+        <button class="load-more-btn ka-preset" data-q="Zakat" style="padding:6px 12px;font-size:12px;">Zakat</button>
+      </div>
+      <div id="ka-status" style="font-size:12px;color:var(--ink-soft);margin-bottom:12px;"></div>
+      <div class="grid-2">
+        <div><div class="section-sub" style="margin-bottom:8px;">Diyanet (Türkçe)</div><div id="ka-diyanet-results"></div></div>
+        <div><div class="section-sub" style="margin-bottom:8px;">BAE (İngilizce)</div><div id="ka-bae-results"></div></div>
+      </div>
+    </div>
+
+    <div class="card" id="bae-liste-karti">
+      <h3>BAE Hutbe Listesi (tam korpus)</h3>
+      <div class="section-sub" style="margin-bottom:12px;">232 hutbenin tamamı, kod kitabı v1.4 etiketleriyle. Bir satıra tıklayın — resmi İngilizce çeviri ve Arapça orijinal yan yana açılır.</div>
+      <div id="bae-liste-root"></div>
+    </div>
+  </section>
+
+  <!-- ================= TEMALAR ================= -->
+  <section class="section" id="sec-temalar" style="display:none;">
+    <h2>Temalar ve Anahtar Kelimeler</h2>
+    <div class="section-sub">15 ana tema, anahtar kelime keşfi ve yıllara göre trendler</div>
+
+    <div class="card">
+      <h3>Anahtar Kelime Bulutu</h3>
+      <div class="tagcloud" id="tagcloud"></div>
+    </div>
+
+    <div class="card">
+      <h3>Anahtar Kelime Sözlüğü (<span id="keyword-count-label"></span>)</h3>
+      <div id="keyword-table-root"></div>
+    </div>
+
+    <div class="card">
+      <h3>Tema × Anahtar Kelime Isı Haritası (en sık 40 kelime)</h3>
+      <div style="overflow-x:auto;"><table class="kw-heat-table" id="kw-heatmap" style="border-collapse:collapse;font-size:11px;"></table></div>
+    </div>
+
+    <div class="card">
+      <h3>Yükselen ve Düşen Anahtar Kelimeler</h3>
+      <div class="grid-2">
+        <div><h4 style="font-size:12px;color:var(--ink-soft);margin-bottom:8px;">↑ Yükselenler</h4><div id="trend-rising"></div></div>
+        <div><h4 style="font-size:12px;color:var(--ink-soft);margin-bottom:8px;">↓ Düşenler</h4><div id="trend-falling"></div></div>
+      </div>
+      <div style="margin-top:16px;">
+        <label style="font-size:12px;color:var(--ink-soft);">Bir kelime seçip yıllara göre trendini gör:</label>
+        <select id="trend-select" style="margin:8px 0;display:block;min-width:220px;"></select>
+        <canvas id="trend-chart" style="max-height:220px;"></canvas>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Karşılaştırma Modu</h3>
+      <div class="section-sub" style="margin-bottom:12px;">İki yıl veya iki temayı yan yana karşılaştırın</div>
+      <div class="compare-cols">
+        <div class="compare-col"><select id="compare-a"></select><div id="compare-out-a"></div></div>
+        <div class="compare-col"><select id="compare-b"></select><div id="compare-out-b"></div></div>
+      </div>
+      <div style="margin-top:14px;"><div style="font-size:11.5px;color:var(--ink-soft);text-transform:uppercase;margin-bottom:6px;">Ortak anahtar kelimeler</div><div id="compare-common" style="font-size:13px;"></div></div>
+    </div>
+  </section>
+
+  <!-- ================= KAYNAKLAR ================= -->
+  <section class="section" id="sec-kaynaklar" style="display:none;">
+    <h2>Ayet, Hadis ve Sahabe Kaynakları</h2>
+    <div class="section-sub">Tam metin atıflar ve 114 surelik kapsam haritası</div>
+
+    <div class="card">
+      <h3>Sure Kapsam Haritası</h3>
+      <div class="section-sub" id="suramap-summary" style="margin-bottom:10px;"></div>
+      <div id="suramap"></div>
+    </div>
+
+    <div class="card"><h3>Ayet Listesi — Tam Metin × Tema</h3><div id="ayet-table-root"></div></div>
+    <div class="card"><h3>Hadis Listesi — Tam Metin × Tema</h3><div id="hadis-table-root"></div></div>
+    <div class="card"><h3>Sahabe / Ehl-i Beyt Listesi</h3><div id="sahabe-table-root"></div></div>
+  </section>
+
+  <!-- ================= HUTBE ARA (ARŞİV) ================= -->
+  <section class="section" id="sec-arsiv" style="display:none;">
+    <h2>Hutbe Ara</h2>
+    <div class="section-sub">711 hutbe arasında arayın, filtreleyin ve keşfedin</div>
+
+    <div class="card archive-search-card">
+      <div class="archive-search-row">
+        <input type="text" id="arch-search" placeholder="Başlık, özet veya anahtar kelimede ara...">
+        <label class="deep-toggle"><input type="checkbox" id="arch-deep"> Tam metinde de ara</label>
+      </div>
+
+      <div class="archive-chips" id="arch-period-chips">
+        <span class="chip-label">Dini dönem:</span>
+        <button type="button" class="chip" data-period="ramazan">Ramazan</button>
+        <button type="button" class="chip" data-period="ramazan-bayrami">Ramazan Bayramı</button>
+        <button type="button" class="chip" data-period="kurban">Kurban Bayramı</button>
+        <button type="button" class="chip" data-period="kandil">Kandiller</button>
+        <button type="button" class="chip" data-period="mevlid">Mevlid</button>
+      </div>
+
+      <div class="archive-filters-row">
+        <div class="archive-filter-group">
+          <span class="filter-label">Yıl</span>
+          <select id="arch-year-min"></select>
+          <span style="color:var(--ink-soft);">–</span>
+          <select id="arch-year-max"></select>
+        </div>
+        <div class="archive-filter-group">
+          <label class="toggle-switch"><input type="checkbox" id="arch-has-ayet"><span>Ayet içeriyor</span></label>
+          <label class="toggle-switch"><input type="checkbox" id="arch-has-hadis"><span>Hadis içeriyor</span></label>
+        </div>
+        <div class="archive-filter-group">
+          <span class="filter-label">Sırala</span>
+          <select id="arch-sort">
+            <option value="date-desc">En yeni</option>
+            <option value="date-asc">En eski</option>
+            <option value="citation-desc">En çok atıf</option>
+            <option value="relevance">Alakaya göre</option>
+          </select>
+        </div>
+        <button type="button" class="btn-reset" id="arch-reset">Filtreleri temizle</button>
+      </div>
+
+      <div class="archive-theme-wrap">
+        <span class="filter-label">Tema (çoklu seçim)</span>
+        <div class="archive-theme-multi" id="arch-theme-multi"></div>
+      </div>
+
+      <div id="arch-status" class="archive-status"></div>
+    </div>
+
+    <div id="arch-deep-results-wrap" class="card" style="display:none;">
+      <h3>Tam Metin Arama Sonuçları</h3>
+      <div id="arch-deep-status" style="font-size:12px;color:var(--ink-soft);margin-bottom:10px;"></div>
+      <div id="arch-deep-results"></div>
+    </div>
+
+    <div class="hutbe-grid" id="hutbe-grid"></div>
+    <div class="archive-loadmore-wrap"><button type="button" class="load-more-btn" id="arch-loadmore" style="display:none;">Daha fazla yükle</button></div>
+  </section>
+
+</div>
+
+<div id="reading-page" class="reading-page" style="display:none;"></div>
+<div id="tccb-reading-page" class="reading-page" style="display:none;"></div>
+<div id="uae-reading-page" class="reading-page" style="display:none;"></div>
+
+<div class="modal-overlay" id="kw-modal">
+  <div class="modal-box" style="max-width:640px;">
+    <button class="modal-close" id="kw-modal-close-btn">✕</button>
+    <h2 id="kw-modal-title">-</h2>
+    <div class="modal-meta">
+      <span class="badge" id="kw-modal-count-badge">Toplam geçiş: <b id="kw-modal-count">-</b></span>
+      <span class="badge sec">Farklı hutbe: <b id="kw-modal-hutbecount">-</b></span>
+    </div>
+    <div class="grid-2" style="margin-bottom:14px;">
+      <div><div style="font-size:11px;color:var(--ink-soft);margin-bottom:6px;">Temalara Göre Dağılım</div><canvas id="kw-modal-cat-chart" style="max-height:170px;"></canvas></div>
+      <div><div style="font-size:11px;color:var(--ink-soft);margin-bottom:6px;">Yıllara Göre Kullanım</div><canvas id="kw-modal-year-chart" style="max-height:170px;"></canvas></div>
+    </div>
+    <div id="kw-modal-hutbe-list" style="max-height:220px;overflow-y:auto;border-top:1px solid var(--border);padding-top:10px;"></div>
+  </div>
+</div>
+
+<footer style="text-align:center;font-size:12px;color:var(--ink-soft);padding:20px 0 40px;">
+  Diyanet İşleri Başkanlığı resmi hutbe PDF'lerinden (2011-2026) çıkarılan veriye dayanır. Özetler ve anahtar kelimeler tam metin okunarak üretilmiştir.
+  Tema sınıflandırması, veri odaklı (açık-eksenel-seçici kodlama) çıkarılan 15 ana tema ile yapılmıştır; her hutbeye 1 ana + en fazla 2 ikincil tema atanmıştır.
+</footer>
+
+<script src="js/state.js"></script>
+<script src="js/data.js"></script>
+<script src="js/tables.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/heatmap.js"></script>
+<script src="js/tagcloud.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/reading.js"></script>
+<script src="js/calendar.js"></script>
+<script src="js/timeline.js"></script>
+<script src="js/lag_analizi.js"></script>
+<script src="js/tccb_reading.js"></script>
+<script src="js/uae_reading.js"></script>
+<script src="js/karsilastirma.js"></script>
+<script src="js/atif_karsilastirma.js"></script>
+<script src="js/sahabe_karsilastirma.js"></script>
+<script src="js/karsilastirmali_arama.js"></script>
+<script src="js/uae_liste.js"></script>
+<script src="js/trends.js"></script>
+<script src="js/suramap.js"></script>
+<script src="js/search.js"></script>
+<script src="js/compare.js"></script>
+<script src="js/metrics.js"></script>
+<script src="js/archive.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

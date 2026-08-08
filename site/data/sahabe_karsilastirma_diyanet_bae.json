@@ -1,0 +1,474 @@
+{
+ "diyanet_toplam": 691,
+ "bae_toplam": 218,
+ "sahabeler": [
+  {
+   "isim": "Hz. Ömer",
+   "diyanet_hutbe": 22,
+   "diyanet_yuzde": 3.2,
+   "bae_hutbe": 30,
+   "bae_yuzde": 13.8,
+   "bae_ornekler": [
+    {
+     "id": 129,
+     "yil": "2016",
+     "tarih": "2016-01-01",
+     "baslik": "القراءة مفتاح العلوم"
+    },
+    {
+     "id": 132,
+     "yil": "2016",
+     "tarih": "2016-01-22",
+     "baslik": "النزاهة"
+    },
+    {
+     "id": 132,
+     "yil": "2016",
+     "tarih": "2016-01-22",
+     "baslik": "النزاهة"
+    }
+   ]
+  },
+  {
+   "isim": "Hz. Ebu Bekir",
+   "diyanet_hutbe": 5,
+   "diyanet_yuzde": 0.7,
+   "bae_hutbe": 17,
+   "bae_yuzde": 7.8,
+   "bae_ornekler": [
+    {
+     "id": 130,
+     "yil": "2016",
+     "tarih": "2016-01-08",
+     "baslik": "تحمل المسؤولية"
+    },
+    {
+     "id": 132,
+     "yil": "2016",
+     "tarih": "2016-01-22",
+     "baslik": "النزاهة"
+    },
+    {
+     "id": 133,
+     "yil": "2016",
+     "tarih": "2016-01-29",
+     "baslik": "من سير الصحابة"
+    }
+   ]
+  },
+  {
+   "isim": "Hz. Ali",
+   "diyanet_hutbe": 20,
+   "diyanet_yuzde": 2.9,
+   "bae_hutbe": 1,
+   "bae_yuzde": 0.5,
+   "bae_ornekler": [
+    {
+     "id": 52,
+     "yil": "2023",
+     "tarih": "2023-03-10",
+     "baslik": "‌والكاظمين الغيظ"
+    }
+   ]
+  },
+  {
+   "isim": "Hz. Hatice",
+   "diyanet_hutbe": 14,
+   "diyanet_yuzde": 2.0,
+   "bae_hutbe": 4,
+   "bae_yuzde": 1.8,
+   "bae_ornekler": [
+    {
+     "id": 82,
+     "yil": "2023",
+     "tarih": "2023-09-29",
+     "baslik": "الإشادة بذوي الفضل والتميز"
+    },
+    {
+     "id": 149,
+     "yil": "2024",
+     "tarih": "2024-10-11",
+     "baslik": "الوفاء مواقف"
+    },
+    {
+     "id": 165,
+     "yil": "2025",
+     "tarih": "2025-01-10",
+     "baslik": "الوفاء للزوجة"
+    }
+   ]
+  },
+  {
+   "isim": "Hz. Hüseyin",
+   "diyanet_hutbe": 18,
+   "diyanet_yuzde": 2.6,
+   "bae_hutbe": 0,
+   "bae_yuzde": 0.0,
+   "bae_ornekler": []
+  },
+  {
+   "isim": "Muaz bin Cebel",
+   "diyanet_hutbe": 10,
+   "diyanet_yuzde": 1.4,
+   "bae_hutbe": 2,
+   "bae_yuzde": 0.9,
+   "bae_ornekler": [
+    {
+     "id": 82,
+     "yil": "2023",
+     "tarih": "2023-09-29",
+     "baslik": "الإشادة بذوي الفضل والتميز"
+    },
+    {
+     "id": 7,
+     "yil": "2024",
+     "tarih": "2024-05-10",
+     "baslik": "يا بني ‌إني ‌أوصيك"
+    }
+   ]
+  },
+  {
+   "isim": "Enes bin Malik",
+   "diyanet_hutbe": 3,
+   "diyanet_yuzde": 0.4,
+   "bae_hutbe": 8,
+   "bae_yuzde": 3.7,
+   "bae_ornekler": [
+    {
+     "id": 130,
+     "yil": "2016",
+     "tarih": "2016-01-08",
+     "baslik": "تحمل المسؤولية"
+    },
+    {
+     "id": 90,
+     "yil": "2023",
+     "tarih": "2023-11-24",
+     "baslik": "قيمة العطاء"
+    },
+    {
+     "id": 29,
+     "yil": "2024",
+     "tarih": "2024-01-12",
+     "baslik": "الأمانة"
+    }
+   ]
+  },
+  {
+   "isim": "Hz. Fatıma",
+   "diyanet_hutbe": 6,
+   "diyanet_yuzde": 0.9,
+   "bae_hutbe": 4,
+   "bae_yuzde": 1.8,
+   "bae_ornekler": [
+    {
+     "id": 133,
+     "yil": "2016",
+     "tarih": "2016-01-29",
+     "baslik": "من سير الصحابة"
+    },
+    {
+     "id": 107,
+     "yil": "2022",
+     "tarih": "2022-03-18",
+     "baslik": "الأطفال نعمة"
+    },
+    {
+     "id": 25,
+     "yil": "2024",
+     "tarih": "2024-02-09",
+     "baslik": "الاهتمام الأسري"
+    }
+   ]
+  },
+  {
+   "isim": "Ebu Zer el-Gıffari",
+   "diyanet_hutbe": 5,
+   "diyanet_yuzde": 0.7,
+   "bae_hutbe": 3,
+   "bae_yuzde": 1.4,
+   "bae_ornekler": [
+    {
+     "id": 135,
+     "yil": "2017",
+     "tarih": "2017-01-06",
+     "baslik": "إطعام الطعام"
+    },
+    {
+     "id": 68,
+     "yil": "2023",
+     "tarih": "2023-06-30",
+     "baslik": "أحب لك ما أحب لنفسي"
+    },
+    {
+     "id": 79,
+     "yil": "2023",
+     "tarih": "2023-09-08",
+     "baslik": "‌فسبح ‌بحمد ربك وكن من الساجدين"
+    }
+   ]
+  },
+  {
+   "isim": "Hz. Aişe",
+   "diyanet_hutbe": 6,
+   "diyanet_yuzde": 0.9,
+   "bae_hutbe": 2,
+   "bae_yuzde": 0.9,
+   "bae_ornekler": [
+    {
+     "id": 67,
+     "yil": "2023",
+     "tarih": "2023-06-23",
+     "baslik": "استشعار عظمة الله تعالى"
+    },
+    {
+     "id": 89,
+     "yil": "2023",
+     "tarih": "2023-11-17",
+     "baslik": "أم المؤمنين زينب رضي الله عنها"
+    }
+   ]
+  },
+  {
+   "isim": "Bilal-i Habeşi",
+   "diyanet_hutbe": 2,
+   "diyanet_yuzde": 0.3,
+   "bae_hutbe": 5,
+   "bae_yuzde": 2.3,
+   "bae_ornekler": [
+    {
+     "id": 138,
+     "yil": "2016",
+     "tarih": "2016-02-12",
+     "baslik": "الشورى و المجلس الوطني"
+    },
+    {
+     "id": 103,
+     "yil": "2022",
+     "tarih": "2022-02-25",
+     "baslik": "لقد رأى من آيات ربه الكبرى"
+    },
+    {
+     "id": 67,
+     "yil": "2023",
+     "tarih": "2023-06-23",
+     "baslik": "استشعار عظمة الله تعالى"
+    }
+   ]
+  },
+  {
+   "isim": "Cabir bin Abdullah",
+   "diyanet_hutbe": 0,
+   "diyanet_yuzde": 0.0,
+   "bae_hutbe": 7,
+   "bae_yuzde": 3.2,
+   "bae_ornekler": [
+    {
+     "id": 131,
+     "yil": "2016",
+     "tarih": "2016-01-15",
+     "baslik": "خطورة التكفير"
+    },
+    {
+     "id": 99,
+     "yil": "2022",
+     "tarih": "2022-01-28",
+     "baslik": "سورة ‌الفلق"
+    },
+    {
+     "id": 109,
+     "yil": "2022",
+     "tarih": "2022-04-01",
+     "baslik": "شهر الخير أقبل"
+    }
+   ]
+  },
+  {
+   "isim": "Hz. Osman",
+   "diyanet_hutbe": 2,
+   "diyanet_yuzde": 0.3,
+   "bae_hutbe": 4,
+   "bae_yuzde": 1.8,
+   "bae_ornekler": [
+    {
+     "id": 133,
+     "yil": "2016",
+     "tarih": "2016-01-29",
+     "baslik": "من سير الصحابة"
+    },
+    {
+     "id": 82,
+     "yil": "2023",
+     "tarih": "2023-09-29",
+     "baslik": "الإشادة بذوي الفضل والتميز"
+    },
+    {
+     "id": 165,
+     "yil": "2025",
+     "tarih": "2025-01-10",
+     "baslik": "الوفاء للزوجة"
+    }
+   ]
+  },
+  {
+   "isim": "Abdullah bin Mesud",
+   "diyanet_hutbe": 1,
+   "diyanet_yuzde": 0.1,
+   "bae_hutbe": 3,
+   "bae_yuzde": 1.4,
+   "bae_ornekler": [
+    {
+     "id": 88,
+     "yil": "2023",
+     "tarih": "2023-11-10",
+     "baslik": "وقال ربكم ادعوني أستجب لكم"
+    },
+    {
+     "id": 94,
+     "yil": "2023",
+     "tarih": "2023-12-22",
+     "baslik": "تاج النعم"
+    },
+    {
+     "id": 29,
+     "yil": "2024",
+     "tarih": "2024-01-12",
+     "baslik": "الأمانة"
+    }
+   ]
+  },
+  {
+   "isim": "Zeyd bin Sabit",
+   "diyanet_hutbe": 0,
+   "diyanet_yuzde": 0.0,
+   "bae_hutbe": 4,
+   "bae_yuzde": 1.8,
+   "bae_ornekler": [
+    {
+     "id": 129,
+     "yil": "2016",
+     "tarih": "2016-01-01",
+     "baslik": "القراءة مفتاح العلوم"
+    },
+    {
+     "id": 130,
+     "yil": "2016",
+     "tarih": "2016-01-08",
+     "baslik": "تحمل المسؤولية"
+    },
+    {
+     "id": 82,
+     "yil": "2023",
+     "tarih": "2023-09-29",
+     "baslik": "الإشادة بذوي الفضل والتميز"
+    }
+   ]
+  },
+  {
+   "isim": "Abdullah b. Abbas",
+   "diyanet_hutbe": 2,
+   "diyanet_yuzde": 0.3,
+   "bae_hutbe": 2,
+   "bae_yuzde": 0.9,
+   "bae_ornekler": [
+    {
+     "id": 66,
+     "yil": "2023",
+     "tarih": "2023-06-16",
+     "baslik": "أيام مباركات"
+    },
+    {
+     "id": 28,
+     "yil": "2024",
+     "tarih": "2024-01-19",
+     "baslik": "ومن يؤت الحكمة فقد أوتي خيرا كثيرا"
+    }
+   ]
+  },
+  {
+   "isim": "Selman-ı Farisi",
+   "diyanet_hutbe": 3,
+   "diyanet_yuzde": 0.4,
+   "bae_hutbe": 0,
+   "bae_yuzde": 0.0,
+   "bae_ornekler": []
+  },
+  {
+   "isim": "Hz. Zeynep",
+   "diyanet_hutbe": 1,
+   "diyanet_yuzde": 0.1,
+   "bae_hutbe": 1,
+   "bae_yuzde": 0.5,
+   "bae_ornekler": [
+    {
+     "id": 203,
+     "yil": "2025",
+     "tarih": "2025-09-12",
+     "baslik": "النبي ﷺ مع بناته"
+    }
+   ]
+  },
+  {
+   "isim": "Hz. Hamza",
+   "diyanet_hutbe": 2,
+   "diyanet_yuzde": 0.3,
+   "bae_hutbe": 0,
+   "bae_yuzde": 0.0,
+   "bae_ornekler": []
+  },
+  {
+   "isim": "Hz. Hasan",
+   "diyanet_hutbe": 2,
+   "diyanet_yuzde": 0.3,
+   "bae_hutbe": 0,
+   "bae_yuzde": 0.0,
+   "bae_ornekler": []
+  },
+  {
+   "isim": "Ümmü Seleme",
+   "diyanet_hutbe": 1,
+   "diyanet_yuzde": 0.1,
+   "bae_hutbe": 0,
+   "bae_yuzde": 0.0,
+   "bae_ornekler": []
+  },
+  {
+   "isim": "Nevvâs",
+   "diyanet_hutbe": 1,
+   "diyanet_yuzde": 0.1,
+   "bae_hutbe": 0,
+   "bae_yuzde": 0.0,
+   "bae_ornekler": []
+  },
+  {
+   "isim": "Ümmü Süleym",
+   "diyanet_hutbe": 0,
+   "diyanet_yuzde": 0.0,
+   "bae_hutbe": 1,
+   "bae_yuzde": 0.5,
+   "bae_ornekler": [
+    {
+     "id": 164,
+     "yil": "2025",
+     "tarih": "2025-01-03",
+     "baslik": "‌إن ‌ربكم ‌الله"
+    }
+   ]
+  },
+  {
+   "isim": "Abdullah bin Ömer",
+   "diyanet_hutbe": 0,
+   "diyanet_yuzde": 0.0,
+   "bae_hutbe": 1,
+   "bae_yuzde": 0.5,
+   "bae_ornekler": [
+    {
+     "id": 75,
+     "yil": "2023",
+     "tarih": "2023-08-11",
+     "baslik": "والله بكل شيء عليم"
+    }
+   ]
+  }
+ ]
+}
