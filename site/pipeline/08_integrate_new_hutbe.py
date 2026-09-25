@@ -250,8 +250,21 @@ NORM2HADITH = {norm(k): v for k, v in CANON_HADITH_BASE.items()}
 ROMAN_RE = re.compile(r'^[IVXLC]+$')
 
 def split_hadith_ref(ref_clean):
-    """Dipnot metninden (kaynak, bölüm) döndürür; kaynak tanınmazsa (None, '')."""
-    first = re.split(r'\s*;\s*', ref_clean)[0]
+    """Dipnot metninden (kaynak, bölüm) döndürür; kaynak tanınmazsa (None, '').
+
+    v7 (25.09.2026, haftalık senkron): dipnot ';' ile birden çok kaynak veriyorsa ve
+    İLKİ tanınamıyorsa sıradakiler denenir. Gerçek örnek — 25.09.2026 TEBLİĞ
+    SORUMLULUĞUMUZ, dipnot 4: "Fedâilü’s-sahâbe, 34; Buhârî, Meğâzî, 39." Diyanet'in
+    PDF'inde ilk kaynağın adı ("Müslim,") eksik; eski kod yalnız ilk parçaya baktığı
+    için doğrudan bir hadis alıntısı çözümsüz kalıyordu. Eksik adı TAHMİN ETMİYORUZ
+    (korpus kaynağı olduğu gibi yansıtmalı), dipnotun açıkça verdiği sonraki kaynağı alıyoruz."""
+    for parca in re.split(r'\s*;\s*', ref_clean):
+        sonuc = _split_hadith_segment(parca)
+        if sonuc[0]:
+            return sonuc
+    return None, ''
+
+def _split_hadith_segment(first):
     toks = [t for t in re.split(r'[\s,]+', first) if t]
     canon, rest = None, ''
     for n in (3, 2, 1):

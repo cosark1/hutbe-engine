@@ -7830,5 +7830,104 @@
   "ton": "uyarı; teşvik",
   "muhatap": "millet",
   "eylem_cagrisi": "ahlaki"
+ },
+ {
+  "id": "2026-07-24",
+  "tarih": "24.07.2026",
+  "baslik": "İSLAM MEDENİYETİ",
+  "ana_kategori": "Vatan, Millet ve Tarih",
+  "ikincil_kategoriler": "İbadet ve Kulluk",
+  "cerceve": "cemaat-toplum",
+  "ton": "teşvik; bilgilendirme",
+  "muhatap": "millet",
+  "eylem_cagrisi": "ahlaki"
+ },
+ {
+  "id": "2026-07-31",
+  "tarih": "31.07.2026",
+  "baslik": "HELAL HARAM DUYARLILIĞI",
+  "ana_kategori": "Ekonomik Hayat: Kazanç, Zekat ve İsraf",
+  "ikincil_kategoriler": "Ahlak, Erdem ve Söz",
+  "cerceve": "birey",
+  "ton": "uyarı; kınama",
+  "muhatap": "genel",
+  "eylem_cagrisi": "ahlaki"
+ },
+ {
+  "id": "2026-08-14",
+  "tarih": "14.08.2026",
+  "baslik": "HER YETİM BİR EMANET",
+  "ana_kategori": "Toplumsal Dayanışma, Merhamet ve Kardeşlik",
+  "ikincil_kategoriler": "İslam Coğrafyası ve Küresel Meseleler",
+  "cerceve": "cemaat-toplum",
+  "ton": "teşvik; uyarı",
+  "muhatap": "genel",
+  "eylem_cagrisi": "maddi; ahlaki"
+ },
+ {
+  "id": "2026-08-21",
+  "tarih": "21.08.2026",
+  "baslik": "MEVLİD-İ NEBİ",
+  "ana_kategori": "Peygamberimiz ve Ashab",
+  "ikincil_kategoriler": "Kandiller, Muharrem ve Mübarek Geceler; Ahlak, Erdem ve Söz",
+  "cerceve": "birey",
+  "ton": "teşvik; bilgilendirme",
+  "muhatap": "genel",
+  "eylem_cagrisi": "ahlaki; katılım"
+ },
+ {
+  "id": "2026-08-28",
+  "tarih": "28.08.2026",
+  "baslik": "VATAN SEVGİSİ",
+  "ana_kategori": "Vatan, Millet ve Tarih",
+  "ikincil_kategoriler": "",
+  "cerceve": "cemaat-toplum",
+  "ton": "teşvik; uyarı",
+  "muhatap": "millet",
+  "eylem_cagrisi": "ahlaki"
+ },
+ {
+  "id": "2026-09-04",
+  "tarih": "04.09.2026",
+  "baslik": "PEYGAMBERİMİZ VE GÜZEL AHLAK",
+  "ana_kategori": "Peygamberimiz ve Ashab",
+  "ikincil_kategoriler": "Ahlak, Erdem ve Söz",
+  "cerceve": "birey",
+  "ton": "teşvik; kınama",
+  "muhatap": "genel",
+  "eylem_cagrisi": "ahlaki"
+ },
+ {
+  "id": "2026-09-11",
+  "tarih": "11.09.2026",
+  "baslik": "EĞİTİM VE ÖĞRETİM",
+  "ana_kategori": "Eğitim, Teknoloji, Çevre ve Toplumsal Değişim",
+  "ikincil_kategoriler": "Aile, Çocuk ve Nesil",
+  "cerceve": "aile",
+  "ton": "teşvik; uyarı",
+  "muhatap": "aileler",
+  "eylem_cagrisi": "ahlaki"
+ },
+ {
+  "id": "2026-09-18",
+  "tarih": "18.09.2026",
+  "baslik": "AHÎLİK AHLAKI",
+  "ana_kategori": "Ekonomik Hayat: Kazanç, Zekat ve İsraf",
+  "ikincil_kategoriler": "",
+  "cerceve": "birey",
+  "ton": "uyarı; kınama",
+  "muhatap": "esnaf-işveren",
+  "eylem_cagrisi": "ahlaki"
+ },
+ {
+  "id": "2026-09-25",
+  "tarih": "25.09.2026",
+  "baslik": "TEBLİĞ SORUMLULUĞUMUZ",
+  "ana_kategori": "Ahlak, Erdem ve Söz",
+  "ikincil_kategoriler": "Peygamberimiz ve Ashab",
+  "cerceve": "birey",
+  "ton": "teşvik; uyarı",
+  "muhatap": "genel",
+  "eylem_cagrisi": "ahlaki"
  }
 ]

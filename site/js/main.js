@@ -48,6 +48,13 @@
   const data = await App.data.loadAll();
   const { hutbeler, meta, ayetler, hadisler, sahabeler, kelimeler } = data;
 
+  // Başlıktaki sayı ve yıl aralığı meta.json'dan — HTML'e elle yazılınca her yeni hutbede
+  // eskiyordu (25.09.2026'da korpus 721'ken başlık hâlâ "711 hutbe" diyordu).
+  const yilAraligi = `${meta.year_min}-${meta.year_max}`;
+  document.querySelectorAll('[data-meta="toplam-hutbe"]').forEach(el => el.textContent = App.util.fmtNum(meta.total_hutbe));
+  document.querySelectorAll('[data-meta="yil-araligi"]').forEach(el => el.textContent = yilAraligi);
+  document.title = document.title.replace(/\d{4}-\d{4}/, yilAraligi);
+
   App.kwModal.init(kelimeler);
   App.reading.init(hutbeler);
   App.compare.init(data);
