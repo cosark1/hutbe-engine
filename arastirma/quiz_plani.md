@@ -188,16 +188,21 @@ Sertifika sınavı değil; hedef "istatistiği bozacak ölçekte manipülasyonu 
 
 ## 10. Soru üretimi ve editoryal süreç
 
-Diyanet hutbeyi birkaç gün önceden yayımlıyor → sorular cumadan önce hazırlanıp gözden geçirilebilir.
+Diyanet hutbeyi birkaç gün önceden yayımlıyor → sorular cumadan önce hazırlanabilir.
+
+> **Karar değişikliği (25.09.2026, kullanıcı kararı): soru üretimi TAMAMEN OTOMATİK.** Önceki
+> "elle onay pazarlık konusu değil" ilkesi kaldırıldı — inceleme adımı ve bildirim yok, sorular
+> yazıldığı anda yayına girer. Güvence artık editörde değil, rutinin kendi denetimlerinde:
+> §4'teki iki kural, her açıklamadaki alıntının hutbe metninde birebir aranması, şık/doğru-cevap
+> biçim denetimi (`10_haftalik_senkron.py kahutbe-yaz`). Hatalı bir soru fark edilirse
+> `admin.html`'den düzeltilir. Ayrıntı: `site/pipeline/HAFTALIK_RUTIN.md`.
 
 | Gün | Adım |
 |---|---|
-| Perşembe | Hutbe metnini çek (**mevcut boru hattı zaten yapıyor**) |
-| Perşembe | LLM ile 5-8 soru taslağı |
-| Perşembe | **Editör paneli: elle onay** — §4'teki iki kontrol zorunlu |
-| Cuma | Yayımla |
-
-Elle onay adımı pazarlık konusu değil: dini içerikte hatalı veya yanlış anlaşılmaya açık bir soru, teknik arızadan çok daha maliyetlidir.
+| Perşembe 20:00 | Yerel zamanlanmış görev: diyanethaber.com.tr RSS'inden yeni hutbe PDF'i (dinhizmetleri.diyanet.gov.tr `robots.txt` ile `/kategoriler/`'i yasaklıyor — kullanılmaz) |
+| Perşembe 20:00 | Korpusa ekle (etiketleme + `korpus-yaz`) → site yeniden üret |
+| Perşembe 20:00 | LLM ile 5 soru → `kahutbe-yaz` ile doğrudan yayına; sonraki Cuma'nın vakit önbelleği |
+| Cuma | Quiz öğle vaktinden sonra kendiliğinden açılır |
 
 ## 11. Yol haritası
 

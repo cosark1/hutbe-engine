@@ -13,9 +13,16 @@ KAYNAK NEDEN diyanethaber.com.tr (dinhizmetleri.diyanet.gov.tr değil):
 ALT KOMUTLAR
   durum                  RSS'i okur; korpusta ve Kahutbe'de eksik olanları listeler.
   indir                  Korpusta eksik hutbelerin PDF'ini {yıl}/ klasörüne indirir,
-                         PDF içindeki "Tarih:" satırını RSS tarihiyle doğrular.
-  kahutbe-yaz DOSYA.json Hutbe + 5 soruyu Supabase'e yazar (idempotent).
-  vakit                  quiz/supabase/vakit_guncelle.py'yi çalıştırır (önümüzdeki Cuma).
+                         PDF içindeki "Tarih:" satırını RSS tarihiyle doğrular; bir kopyasını
+                         ~/.kahutbe/is/pdf/'e koyar.
+  cikar                  ~/.kahutbe/is/pdf/'tekileri ~/.kahutbe/is/extracted.json'a çıkarır.
+  korpus-yaz EXT LABELS  Etiketleri kapalı listelere karşı denetler, korpusa yazar.
+  alinti-denetle DOSYA   Soru JSON'undaki alıntıları hutbe metninde arar (yazmaz).
+  kahutbe-yaz DOSYA.json Hutbe + 5 soruyu Supabase'e yazar (idempotent). Önce biçimi ve
+                         açıklamalardaki “…” alıntılarının korpustaki hutbe metninde birebir
+                         geçtiğini denetler; tek hata varsa HİÇBİR ŞEY yazmaz (soru onayı
+                         otomatik olduğu için editörün yerini bu denetim tutuyor).
+  vakit [YYYY-MM-DD]     quiz/supabase/vakit_guncelle.py'yi çalıştırır (varsayılan: önümüzdeki Cuma).
 
 SERVİS ANAHTARI: ortam değişkeni SUPABASE_SERVICE_ROLE_KEY ya da
   %USERPROFILE%\\.kahutbe\\supabase.env (SUPABASE_SERVICE_ROLE_KEY=... satırı).
@@ -25,6 +32,7 @@ import html, io, json, os, re, subprocess, sys, urllib.request
 from datetime import date
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8")
 
 BASE = r"G:\Drive'ım\kamuran\hutbe"
 DATA = os.path.join(BASE, "site", "data")
@@ -35,6 +43,10 @@ UA = {"User-Agent": "Mozilla/5.0 (kahutbe haftalik senkron)"}
 # Kahutbe'ye eklenecek en eski tarih. Kullanıcı kararı (25.09.2026): eksik haftalar
 # 24.07.2026'dan itibaren tamamlanır; daha eskileri yalnızca korpusta kalır.
 KAHUTBE_TABAN = "2026-07-24"
+
+# Haftalık rutinin geçici çalışma klasörü (PDF kopyaları, extracted/labels/soru JSON'ları).
+# Drive dışında: yarım kalmış bir çalıştırmanın ara dosyaları senkronlanmasın.
+IS = os.path.join(os.path.expanduser("~"), ".kahutbe", "is")
 
 AYLAR = {"ocak":1,"şubat":2,"mart":3,"nisan":4,"mayıs":5,"haziran":6,"temmuz":7,
          "ağustos":8,"eylül":9,"ekim":10,"kasım":11,"aralık":12}
@@ -182,12 +194,56 @@ def pdf_indir(r):
 
 def indir():
     _, eksik, _ = durum(yazdir=False)
+    # Bu çalıştırmanın PDF'leri ayrıca IS/pdf'e kopyalanır: extract_batch bir klasörün tamamını
+    # okuyor, {yıl}/ klasöründe ise korpustaki eski PDF'ler de var.
+    import shutil
+    shutil.rmtree(os.path.join(IS, "pdf"), ignore_errors=True)
+    os.makedirs(os.path.join(IS, "pdf"))
     if not eksik:
         print("Korpusta eksik hutbe yok — indirilecek bir şey yok.")
         return
     print(f"{len(eksik)} PDF indiriliyor:")
     for r in sorted(eksik, key=lambda r: r["tarih"]):
-        pdf_indir(r)
+        yol = pdf_indir(r)
+        if yol:
+            shutil.copy2(yol, os.path.join(IS, "pdf", os.path.basename(yol)))
+
+
+def cikar():
+    """IS/pdf'teki PDF'leri 08.extract_batch ile IS/extracted.json'a çıkarır."""
+    sys.path.insert(0, os.path.join(BASE, "site", "pipeline"))
+    from importlib import import_module
+    entegre = import_module("08_integrate_new_hutbe")
+    hedef = os.path.join(IS, "extracted.json")
+    entegre.extract_batch(os.path.join(IS, "pdf"), hedef)
+    for r in json.load(open(hedef, encoding="utf-8")):
+        print(f"  {r['date']}  {r['title']}  ({len(r['text'])} karakter)")
+    print(f"-> {hedef}")
+
+
+def _alinti_norm(s):
+    """Karşılaştırma için: tırnak türleri (iç içe alıntıda ‘ ’ / “ ” farkı), dipnot rakamları,
+    büyük-küçük harf ve boşluk farkları yok sayılır."""
+    s = re.sub(r"[“”\"‘’'`]", "", s)
+    s = re.sub(r"(?<=[^\W\d])\d+\b", "", s)          # kelimeye yapışık dipnot işaretçisi
+    s = s.replace("İ", "i").replace("I", "ı").lower()
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def alinti_denetle(k):
+    """Açıklamalardaki “…” alıntılarını hutbe metninde arar; bulunamayanları döndürür."""
+    gun, ay, yil = k["korpus_hutbe_id"].split(".")
+    metinler = json.load(open(os.path.join(DATA, "metinler", f"{yil}.json"), encoding="utf-8"))
+    assert k["korpus_hutbe_id"] in metinler, f"{k['korpus_hutbe_id']} korpusta yok — önce korpus-yaz"
+    metin = _alinti_norm(metinler[k["korpus_hutbe_id"]]["text"])
+    eksik = []
+    for s in k["sorular"]:
+        for alinti in re.findall(r"“(.*?)”(?![’\w])", s["aciklama"]):
+            for parca in re.split(r"…|\.\.\.", alinti):
+                p = _alinti_norm(parca).strip(" ,;.:!?")
+                if len(p) > 8 and p not in metin:
+                    eksik.append(f"soru {s['sira']}: {parca.strip()[:80]}")
+    return eksik
 
 
 def kahutbe_yaz(dosya):
@@ -199,6 +255,11 @@ def kahutbe_yaz(dosya):
     for s in sor:
         assert len(s["secenekler"]) == 4 and 0 <= s["dogru_idx"] <= 3, f"soru {s['sira']} geçersiz"
         assert len(set(s["secenekler"])) == 4, f"soru {s['sira']}: şıklar tekrar ediyor"
+        assert s["aciklama"].strip(), f"soru {s['sira']}: açıklama boş"
+    assert sorted(s["sira"] for s in sor) == [1, 2, 3, 4, 5], "sıra 1-5 olmalı"
+    eksik = alinti_denetle(k)
+    if eksik:
+        sys.exit("Alıntı denetimi BAŞARISIZ — hiçbir şey yazılmadı:\n  " + "\n  ".join(eksik))
     url, _ = kahutbe_config()
     key = servis_anahtari()
     H = {"apikey": key, "Authorization": f"Bearer {key}", "Content-Type": "application/json"}
@@ -297,14 +358,22 @@ def korpus_yaz(extracted_json, labels_json):
         l = [L for L in labels if L["date"].endswith(yil)]
         entegre.integrate(e, l, int(yil), backup_suffix=ek)
     entegre.recompute_meta(ek)
+    # Kök dizindeki türev atıf tablolarını yeniden üretir VE meta.json'ın atıf alanlarını
+    # (total_citations, top_verses, top_suras, top_hadis_kaynak) yerleşik tanımıyla yazar.
+    # recompute_meta total_citations'ı hutbe başına citation_count toplamı olarak hesaplıyor;
+    # sitenin baştan beri kullandığı tanım ayet + hadis + sahabe ismi. Bu adım atlanınca
+    # 25.09.2026 backfill'inde sayı 1546 yerine 1783 olarak yayına çıktı.
+    subprocess.run([sys.executable, os.path.join(BASE, "arastirma", "uret_turev_dosyalar.py")],
+                   check=True, cwd=BASE, env=dict(os.environ, PYTHONIOENCODING="utf-8"))
     print(f"\nKorpusa {len(labels)} hutbe eklendi (yedek eki: {ek}).")
 
 
-def vakit():
+def vakit(tarih=None):
     url, _ = kahutbe_config()
     env = dict(os.environ, SUPABASE_URL=url, SUPABASE_SERVICE_ROLE_KEY=servis_anahtari(),
                PYTHONIOENCODING="utf-8")
-    subprocess.run([sys.executable, os.path.join(QUIZ, "supabase", "vakit_guncelle.py")], env=env, check=True)
+    subprocess.run([sys.executable, os.path.join(QUIZ, "supabase", "vakit_guncelle.py")] + ([tarih] if tarih else []),
+                   env=env, check=True)
 
 
 if __name__ == "__main__":
@@ -313,11 +382,17 @@ if __name__ == "__main__":
         durum()
     elif komut == "indir":
         indir()
+    elif komut == "cikar":
+        cikar()
     elif komut == "korpus-yaz":
         korpus_yaz(sys.argv[2], sys.argv[3])
     elif komut == "kahutbe-yaz":
         kahutbe_yaz(sys.argv[2])
+    elif komut == "alinti-denetle":  # yalnızca denetim, yazma yok
+        e = alinti_denetle(json.load(open(sys.argv[2], encoding="utf-8")))
+        print("\n".join(e) if e else "tüm alıntılar hutbe metninde bulundu")
+        sys.exit(1 if e else 0)
     elif komut == "vakit":
-        vakit()
+        vakit(sys.argv[2] if len(sys.argv) > 2 else None)
     else:
         sys.exit(__doc__)

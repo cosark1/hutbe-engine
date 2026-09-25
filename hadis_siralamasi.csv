@@ -1,10 +1,10 @@
 ﻿kaynak,bolum,atif_sayisi
-Tirmizî,Birr,43
+Tirmizî,Birr,45
 Ahmed b. Hanbel,Müsned,40
 Tirmizî,Sıfatü’l-kıyâme,37
-Müslim,Îmân,33
-Müslim,Birr,33
-Buhârî,Edeb,27
+Müslim,Îmân,35
+Müslim,Birr,34
+Buhârî,Edeb,28
 Buhârî,Îmân,25
 Ebû Dâvûd,Edeb,23
 Müslim,Sıyâm,19
@@ -13,55 +13,57 @@ Buhârî,Salât,15
 Tirmizî,Menâkıb,15
 Buhârî,Rikâk,14
 Müslim,Birr ve Sıla,12
+İbn Mâce,Nikâh,12
 Tirmizî,Edâhî,11
-İbn Mâce,Nikâh,11
+Tirmizî,İlim,11
 Tirmizî,İman,11
 Buhârî,Tevhid,10
-Tirmizî,İlim,10
 Tirmizî,Radâ,9
 Tirmizî,Birr ve Sıla,9
 Ebû Dâvûd,Zekât,9
+Nesâi,Cihâd,9
 Buhârî,Nikâh,8
 Buhârî,Cihâd,8
+Dârimî,Mukaddime,8
 Buhârî,İlim,8
-Nesâi,Cihâd,8
 İbn Mâce,Sunne,7
 Tirmizî,Deavât,7
 Müslim,Zekât,7
 Buhârî,Zekât,7
 Buhârî,Îdeyn,7
 Müslim,Zühd,7
-Dârimî,Mukaddime,7
+İbn Mâce,Zühd,7
 Beyhakî,Şüabü’l-îmân,7
 Buhârî,Cenâiz,6
 Buhârî,Mezâlim,6
+Buhârî,Talâk,6
 Tirmizî,Cum’a,6
 Tirmizî,Büyû’,6
 Tirmizî,Fiten,6
 Buhârî,Megâzî,6
 Tirmizî,Diyât,6
-İbn Mâce,Zühd,6
 Hakim,Müstedrek,5
 Buhârî,Savm,5
-Buhârî,Talâk,5
+İbn Mâce,Edeb,5
 Tirmizî,Tahâret,5
 Buhârî,Tefsîr,5
 İbn Mâce,İkâmet,5
+Buhârî,Büyû’,5
 Buhârî,Libâs,4
-İbn Mâce,Edeb,4
 Müslim,Zühd ve rekâik,4
 İbn Mâce,Rühûn,4
+Buhârî,Bed’ü’l-vahy,4
 Müslim,Zikir,4
 Müslim,Mesâcid,4
 Buhârî,Ezân,4
 İbn Mâce,Ticâret,4
 Ebû Dâvûd,Libâs,4
 Müslim,Tahâret,4
+Müslim,Müsâkât,4
 Kudâî,Müsnedü’ş-şihâb,4
 Müslim,Eşribe,3
 Tirmizî,Tefsîru’l-Kur’ân,3
 Buhârî,Umre,3
-Buhârî,Bed’ü’l-vahy,3
 Buhârî,Enbiyâ,3
 Müslim,Nikâh,3
 İbn Mâce,Et’ıme,3
@@ -75,9 +77,8 @@ Müslim,Cum’a,3
 Tirmizî,Fedâilü’l-cihâd,3
 Taberânî,el-Mu’cemu’l-evsat,3
 Ebû Dâvûd,Salât,3
+Ebû Dâvûd,Sünnet,3
 Müslim,Vasiyye,3
-Buhârî,Büyû’,3
-Müslim,Müsâkât,3
 İbn Mâce,Sünnet,3
 Ebû Dâvûd,Tahâret,2
 Tirmizî,Daavât,2
@@ -96,13 +97,14 @@ Buhârî,Mevâkîtü’s-salât,2
 Müslim,Salât,2
 Buhârî,Müsâkât,2
 Ebû Dâvûd,Cihâd,2
-Ebû Dâvûd,Sünnet,2
+Taberânî,el-Mu’cemü’l-kebîr,2
 Buhârî,Edep,2
 Ebû Dâvûd,Nikâh,2
 İbn Hişâm,Sîret,2
 Nesâi,Işratü’n-nisâ’,2
 Nesâi,Gusül,2
 Nesâi,Sıyâm,2
+Müslim,Müsâfirîn,2
 Nesâi,Dahâyâ,1
 Hakim,el-Müstedrek,1
 Müslim,Savm,1
@@ -141,7 +143,6 @@ Müslim,Sıfâtü’l-münâfikîn,1
 Tirmizî,Şemâil,1
 Muvatta,İ’tikâf,1
 İbn Mâce,Duâ,1
-Taberânî,el-Mu’cemü’l-kebîr,1
 Muvatta,Hüsnü’l-hulk,1
 Ebû Dâvûd,Büyû’,1
 Ebû Dâvûd,Büyû’ (İcâre),1
@@ -157,7 +158,6 @@ Nesâi,Muhârebe,1
 Süyûtî,el-Fethü’l-kebîr,1
 Nesâi,Mesâcid,1
 İbn Mâce,Eşribe,1
-Müslim,Müsâfirîn,1
 Müslim,Tahâre,1
 Tirmizî,De’avât,1
 Ebû Dâvûd,Vitir,1
@@ -165,3 +165,6 @@ Ebû Dâvûd,Menâsik,1
 Nesâi,Cenâiz,1
 Buhârî,İmân,1
 Tirmizî,Sıfatü’l-Kıyame,1
+Nesâi,Îmân,1
+Ahmed b. Hanbel,,1
+Buhârî,Meğâzî,1
