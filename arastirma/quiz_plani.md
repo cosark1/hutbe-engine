@@ -119,7 +119,7 @@ QR elendi (cami düzeyinde izin/tanınırlık gerektiriyordu). Bu, cami düzeyin
 
 **Çözüm:** ilçe listesi Diyanet'ten değil, tam idari listeden (972 ilçe, koordinatlı) alınır; `diyanet_ilce_kodu` mümkün olduğunda doğrudan eşleşmeden (784 ilçe), yoksa **il merkezinin kodundan** (188 ilçe) türetilir. Namaz vakti bir il merkezinde saniyeler mertebesinde değiştiği için bu, vakit doğruluğunu bozmaz — yalnızca o 188 ilçe il merkeziyle **aynı** öğle vaktini paylaşır. Arama ve sıralama gerçek ilçe düzeyinde kalır. (`diyanet_ilce_kodu` bu yüzden benzersiz değildir.)
 
-**Cami düzeyi ileride:** kullanıcıların cami adını serbest metin girmesiyle kalabalıklaştırma (crowdsourcing) yoluyla eklenebilir. Kullanıcı tabanı oluşmadan anlamsız; v1 kapsamı dışında.
+**Cami düzeyi (25.09.2026, kullanıcı kararıyla eklendi):** Diyanet'in açık "Cami Bilgileri" tablosu (≈90 bin cami, yalnızca açık adres, koordinat yok) + OpenStreetMap konumları → `camiler` tablosu (`quiz/supabase/cami_hazirla.py`, `10_camiler.sql`). Konum hassasiyeti camiye göre değişir: OSM'deki caminin kendisi (isim eşleşmesi ya da mahallede tek cami), adresteki mahalle/köy noktası ya da ilçe merkezi. Bu yüzden **otomatik atama yok**: konum yalnızca yakın camileri sıralar, kişi kendi camisini seçer (kentte camiler 100-200 m arayla, GPS kapalı alanda 20-50 m sapar). Seçim isteğe bağlıdır; seçmeyen ilçe düzeyinde yarışır. Sonuç ekranında cami içi sıralama + ilçedeki camilerin ortalama puan sıralaması.
 
 ## 6. Takma ad ve puanlama
 
@@ -142,7 +142,8 @@ Kurumsal işbirliği ve fiziksel QR yoksa büyüme tamamen **organik**. Bu, ür�
 Dini inanç KVKK m.6'da **özel nitelikli kişisel veri**. Tasarım ilkeleri (pazarlık konusu değil):
 
 - Hesap yok, e-posta yok, telefon numarası yok.
-- **Ham GPS koordinatı saklanmaz** — yalnızca ilçe kodu.
+- **Ham GPS koordinatı saklanmaz** — cihazdan hiç çıkmaz; sunucuya yalnızca ilçe ve (isteğe bağlı) kişinin kendi seçtiği cami yazılır.
+  *Karar değişikliği (25.09.2026):* önceki "yalnızca ilçe kodu" ilkesi kullanıcı kararıyla cami düzeyine genişletildi; cami sıralamalarında katılımcı eşiği istenmedi. Küçük camilerde takma adın kişiyle eşleştirilebileceği bilinerek alınmış bir karar — etik kurul başvurusu yapılırsa bu madde yeniden değerlendirilmeli.
 - Kimlik yerine cihazda duran rastgele jeton; sunucuda yalnızca **hash'i**.
 - Araştırma dışa aktarımında jeton hash'i de düşürülür → veri **anonim** hâle gelir (anonim veri KVKK kapsamı dışı).
 - İlk girişte aydınlatma metni + araştırma kullanımına rıza.
@@ -175,7 +176,7 @@ cevaplar   (id, oturum_id, soru_id, secilen_idx, dogru_mu, yanit_ms, puan)
 
 - `hutbeler.korpus_hutbe_id` → araştırma değerinin tamamı bu bağlantıdan geliyor; **zorunlu tutulmalı.**
 - `oturumlar.kol` → Faz 4'teki ön/son soru rastgeleleştirmesi için (v1'de hep `"on"`).
-- `camiler` tablosu v1'de **yok** (§5).
+- `camiler (id, ilce_id, ad, mahalle, adres, lat, lng, konum)` ve `oturumlar.cami_id` 25.09.2026'da eklendi (§5, `10_camiler.sql`).
 
 ### 9.2 Kötüye kullanıma karşı
 
