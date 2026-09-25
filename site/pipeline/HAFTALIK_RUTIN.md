@@ -85,7 +85,15 @@ python ..\yayina_hazirla.py
 ## 4. Kahutbe soruları (yargı adımı)
 
 **Yalnız Cuma hutbeleri** (bayram hutbeleri öğle vakti mantığına uymaz — yalnız korpusa girer).
-Her eksik Cuma için `quiz\supabase\sorular\YYYY-MM-DD.json` yaz:
+
+> **Cevap gizliliği:** `cosark1/race` deposu HERKESE AÇIK. Soru dosyası doğru cevapları içerir;
+> quiz gününden önce depoya girerse cevaplar GitHub'dan okunabilir. Bu yüzden yeni soru dosyası
+> önce `%USERPROFILE%\.kahutbe\is\sorular\` altına yazılır ve oradan yüklenir. Depoya
+> (`quiz\supabase\sorular\`) yalnızca **tarihi geçmiş** soru dosyaları taşınır: her çalıştırmanın
+> başında `is\sorular\` içinde tarihi bugünden ESKİ olan dosyaları `quiz\supabase\sorular\`e taşı
+> ve 6. adımda commit'le. (Sitede `supabase/` zaten `.assetsignore` ile yayından hariç.)
+
+Her eksik Cuma için `%USERPROFILE%\.kahutbe\is\sorular\YYYY-MM-DD.json` yaz:
 
 ```json
 {"tarih": "2026-10-02", "baslik": "Başlık Türkçe Yazımla", "korpus_hutbe_id": "02.10.2026",
@@ -116,16 +124,16 @@ Kurallar (quiz_plani §4 + Kardeşlik revizyonunda kullanıcıyla netleşenler):
 Önce denetle, sonra yaz:
 
 ```
-python 10_haftalik_senkron.py alinti-denetle ..\..\quiz\supabase\sorular\2026-10-02.json
-python 10_haftalik_senkron.py kahutbe-yaz   ..\..\quiz\supabase\sorular\2026-10-02.json
+python 10_haftalik_senkron.py alinti-denetle %USERPROFILE%\.kahutbe\is\sorular\2026-10-02.json
+python 10_haftalik_senkron.py kahutbe-yaz   %USERPROFILE%\.kahutbe\is\sorular\2026-10-02.json
 ```
 
 `kahutbe-yaz` biçimi ve alıntıları kendisi de denetler, hata varsa hiçbir şey yazmaz.
 Alıntı bulunamazsa alıntıyı düzelt — denetimi gevşetme. İdempotenttir: o tarihte soru varsa
 dokunmaz (düzeltme gerekiyorsa `admin.html`'den ya da REST ile tek tek).
 
-Kayıt için aynı soruları `quiz\supabase\` altında sıradaki numaralı SQL dosyasına da yaz
-(`09_hutbeler_agustos_eylul2026.sql` biçiminde; veritabanı sıfırdan kurulursa kullanılır).
+Ayrı SQL kaydı yazma: soru JSON'ları (tarihleri geçince depoya taşınanlar) veritabanı sıfırdan
+kurulursa `kahutbe-yaz` ile yeniden yüklenebilir; `09_…sql` tek seferlik geriye dönük kayıttı.
 
 ## 5. Vakit önbelleği
 
@@ -145,7 +153,7 @@ tekrar çalıştır.
 |---|---|---|
 | cosark1/hutbe-engine | `hutbe\` | `{yıl}\*.pdf` (yeni), `site\data\`, `arastirma\korpus_v2\`, kök dizindeki `*_siralamasi.csv`, `*_tam_metin.csv`, `*_x_tema.csv`, `sahabe_tam_liste.csv` |
 | cosark1/hutbe (GitHub Pages) | `hutbe\site-build\` | `git add -A` burada güvenli (üretilmiş kopya) |
-| cosark1/race (Kahutbe) | `hutbe\quiz\` | `supabase\sorular\*.json` (yeni), yeni SQL kaydı |
+| cosark1/race (Kahutbe) | `hutbe\quiz\` | yalnızca `is\sorular\`'dan taşınan, **tarihi geçmiş** `supabase\sorular\*.json` — bu haftanın soruları ASLA (depo herkese açık) |
 
 Kullanıcının commit'lenmemiş başka değişiklikleri olabilir (ör. `arastirma_programi.md`,
 `.claude/launch.json`) — onlara **dokunma**. Git kimliği depo-özel `cosark1`; `--global` kullanma.
