@@ -22,7 +22,7 @@
    76,
    74,
    68,
-   62,
+   63,
    58,
    57,
    56,
@@ -332,7 +332,7 @@
     3,
     5,
     3,
-    3,
+    4,
     3,
     2,
     7,
@@ -4538,7 +4538,7 @@
   },
   {
    "name": "Tevbe",
-   "count": 19
+   "count": 20
   },
   {
    "name": "Hicr",
@@ -4686,7 +4686,7 @@
   },
   {
    "name": "Müslim",
-   "count": 172
+   "count": 173
   },
   {
    "name": "İbn Mâce",
@@ -4740,12 +4740,12 @@
  "keyword_category_matrix": [
   {
    "keyword": "kardeşlik",
-   "total": 42,
+   "total": 43,
    "Toplumsal Dayanışma, Merhamet ve Kardeşlik": 13,
    "İman, Tevhid ve Ahiret": 0,
    "Ramazan, Oruç ve Bayramlar": 15,
    "Ahlak, Erdem ve Söz": 1,
-   "İbadet ve Kulluk": 0,
+   "İbadet ve Kulluk": 1,
    "Aile, Çocuk ve Nesil": 0,
    "Kandiller, Muharrem ve Mübarek Geceler": 1,
    "Vatan, Millet ve Tarih": 5,
@@ -5367,12 +5367,12 @@
   },
   {
    "keyword": "cami",
-   "total": 15,
+   "total": 16,
    "Toplumsal Dayanışma, Merhamet ve Kardeşlik": 0,
    "İman, Tevhid ve Ahiret": 0,
    "Ramazan, Oruç ve Bayramlar": 2,
    "Ahlak, Erdem ve Söz": 0,
-   "İbadet ve Kulluk": 10,
+   "İbadet ve Kulluk": 11,
    "Aile, Çocuk ve Nesil": 1,
    "Kandiller, Muharrem ve Mübarek Geceler": 0,
    "Vatan, Millet ve Tarih": 2,
@@ -5502,7 +5502,7 @@
  "top_keywords": [
   {
    "keyword": "kardeşlik",
-   "count": 42
+   "count": 43
   },
   {
    "keyword": "dua",
@@ -5634,7 +5634,7 @@
   },
   {
    "keyword": "cami",
-   "count": 15
+   "count": 16
   },
   {
    "keyword": "istikamet",
@@ -5741,13 +5741,13 @@
    "count": 10
   }
  ],
- "total_hutbe": 721,
- "total_citations": 1546,
- "total_ayet": 688,
- "total_hadis": 838,
+ "total_hutbe": 722,
+ "total_citations": 1548,
+ "total_ayet": 689,
+ "total_hadis": 839,
  "total_sahabe_isim": 20,
- "total_keywords": 1697,
- "total_keyword_mentions": 4055,
+ "total_keywords": 1699,
+ "total_keyword_mentions": 4060,
  "year_min": 2011,
  "year_max": 2026,
  "top_category": "İman, Tevhid ve Ahiret"
