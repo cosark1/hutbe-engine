@@ -28,7 +28,7 @@
    56,
    46,
    41,
-   24,
+   25,
    23,
    25,
    23,
@@ -338,7 +338,7 @@
     7,
     4,
     1,
-    0,
+    1,
     1,
     2,
     2,
@@ -4514,7 +4514,7 @@
  "top_suras": [
   {
    "name": "Bakara",
-   "count": 83
+   "count": 84
   },
   {
    "name": "Al-i İmran",
@@ -4530,7 +4530,7 @@
   },
   {
    "name": "Nisa",
-   "count": 24
+   "count": 25
   },
   {
    "name": "Hucurat",
@@ -4694,7 +4694,7 @@
   },
   {
    "name": "Ebû Dâvûd",
-   "count": 62
+   "count": 63
   },
   {
    "name": "Ahmed b. Hanbel",
@@ -5705,6 +5705,10 @@
    "count": 12
   },
   {
+   "keyword": "vicdan",
+   "count": 11
+  },
+  {
    "keyword": "teslimiyet",
    "count": 11
   },
@@ -5733,21 +5737,17 @@
    "count": 11
   },
   {
-   "keyword": "vicdan",
-   "count": 10
-  },
-  {
    "keyword": "hicri yılbaşı",
    "count": 10
   }
  ],
- "total_hutbe": 722,
- "total_citations": 1548,
- "total_ayet": 689,
- "total_hadis": 839,
+ "total_hutbe": 723,
+ "total_citations": 1552,
+ "total_ayet": 692,
+ "total_hadis": 840,
  "total_sahabe_isim": 20,
- "total_keywords": 1699,
- "total_keyword_mentions": 4060,
+ "total_keywords": 1700,
+ "total_keyword_mentions": 4065,
  "year_min": 2011,
  "year_max": 2026,
  "top_category": "İman, Tevhid ve Ahiret"
