@@ -24,6 +24,7 @@ Bakara,152,5
 İsra,14,5
 Al-i İmran,105,5
 Al-i İmran,147,5
+Kıyamet,36,5
 Maide,2,5
 İsra,36,5
 Nur,30,5
@@ -50,8 +51,8 @@ Saff,8,4
 Furkan,67,4
 Tin,4,4
 Al-i İmran,8,4
-Kıyamet,36,4
 Tevbe,111,4
+Furkan,74,4
 Hucurat,12,4
 Zilzal,7,4
 Hud,112,4
@@ -79,7 +80,6 @@ Kehf,30,3
 Bakara,110,3
 Tekasür,8,3
 Al-i İmran,169,3
-Furkan,74,3
 Enbiya,107,3
 Mü'minun,1,3
 Al-i İmran,134,3
@@ -109,6 +109,7 @@ Bakara,274,2
 Felak,1,2
 Bakara,222,2
 Bakara,257,2
+Nahl,80,2
 Nisa,86,2
 Nisa,124,2
 İsra,9,2
@@ -196,7 +197,6 @@ Bakara,179,1
 Hicr,49,1
 Hicr,50,1
 Bakara,267,1
-Nahl,80,1
 Mülk,30,1
 Nebe,10,1
 Fetih,10,1
@@ -308,3 +308,4 @@ Ahzab,21,1
 Tahrim,66,1
 Bakara,249,1
 Nisa,75,1
+Saff,4,1

@@ -7951,5 +7951,38 @@
   "ton": "kınama; teşvik",
   "muhatap": "ümmet",
   "eylem_cagrisi": "ahlaki; maddi"
+ },
+ {
+  "id": "2026-10-16",
+  "tarih": "16.10.2026",
+  "baslik": "İNSAN!",
+  "ana_kategori": "Toplumsal Dayanışma, Merhamet ve Kardeşlik",
+  "ikincil_kategoriler": "Ahlak, Erdem ve Söz",
+  "cerceve": "birey",
+  "ton": "teşvik; uyarı",
+  "muhatap": "genel",
+  "eylem_cagrisi": "ahlaki"
+ },
+ {
+  "id": "2026-10-23",
+  "tarih": "23.10.2026",
+  "baslik": "AİLE",
+  "ana_kategori": "Aile, Çocuk ve Nesil",
+  "ikincil_kategoriler": "",
+  "cerceve": "aile",
+  "ton": "teşvik; uyarı",
+  "muhatap": "aileler",
+  "eylem_cagrisi": "ahlaki"
+ },
+ {
+  "id": "2026-10-30",
+  "tarih": "30.10.2026",
+  "baslik": "BİRLİK VE BERABERLİK",
+  "ana_kategori": "Vatan, Millet ve Tarih",
+  "ikincil_kategoriler": "Toplumsal Dayanışma, Merhamet ve Kardeşlik",
+  "cerceve": "cemaat-toplum",
+  "ton": "teşvik; uyarı",
+  "muhatap": "millet",
+  "eylem_cagrisi": "ahlaki"
  }
 ]

@@ -18,14 +18,14 @@
    "Kur'an-ı Kerim"
   ],
   "values": [
-   72,
+   73,
    76,
    74,
    68,
    63,
-   58,
+   59,
    57,
-   56,
+   57,
    46,
    41,
    25,
@@ -328,14 +328,14 @@
     0
    ],
    [
-    1,
+    2,
     3,
     5,
     3,
     4,
-    3,
+    4,
     2,
-    7,
+    8,
     4,
     1,
     1,
@@ -4554,15 +4554,15 @@
   },
   {
    "name": "Nahl",
+   "count": 15
+  },
+  {
+   "name": "Furkan",
    "count": 14
   },
   {
    "name": "Enbiya",
    "count": 14
-  },
-  {
-   "name": "Furkan",
-   "count": 13
   },
   {
    "name": "İnşirah",
@@ -4678,7 +4678,7 @@
  "top_hadis_kaynak": [
   {
    "name": "Tirmizî",
-   "count": 217
+   "count": 221
   },
   {
    "name": "Buhârî",
@@ -4694,7 +4694,7 @@
   },
   {
    "name": "Ebû Dâvûd",
-   "count": 63
+   "count": 64
   },
   {
    "name": "Ahmed b. Hanbel",
@@ -4740,7 +4740,7 @@
  "keyword_category_matrix": [
   {
    "keyword": "kardeşlik",
-   "total": 43,
+   "total": 44,
    "Toplumsal Dayanışma, Merhamet ve Kardeşlik": 13,
    "İman, Tevhid ve Ahiret": 0,
    "Ramazan, Oruç ve Bayramlar": 15,
@@ -4748,7 +4748,7 @@
    "İbadet ve Kulluk": 1,
    "Aile, Çocuk ve Nesil": 0,
    "Kandiller, Muharrem ve Mübarek Geceler": 1,
-   "Vatan, Millet ve Tarih": 5,
+   "Vatan, Millet ve Tarih": 6,
    "Ekonomik Hayat: Kazanç, Zekat ve İsraf": 1,
    "Sabır, Tevekkül ve Manevi Olgunluk": 0,
    "İslam Coğrafyası ve Küresel Meseleler": 0,
@@ -4777,6 +4777,25 @@
    "Kur'an-ı Kerim": 1
   },
   {
+   "keyword": "merhamet",
+   "total": 31,
+   "Toplumsal Dayanışma, Merhamet ve Kardeşlik": 15,
+   "İman, Tevhid ve Ahiret": 1,
+   "Ramazan, Oruç ve Bayramlar": 1,
+   "Ahlak, Erdem ve Söz": 4,
+   "İbadet ve Kulluk": 0,
+   "Aile, Çocuk ve Nesil": 2,
+   "Kandiller, Muharrem ve Mübarek Geceler": 1,
+   "Vatan, Millet ve Tarih": 0,
+   "Ekonomik Hayat: Kazanç, Zekat ve İsraf": 0,
+   "Sabır, Tevekkül ve Manevi Olgunluk": 1,
+   "İslam Coğrafyası ve Küresel Meseleler": 1,
+   "Afet, Kriz ve Sağlık": 1,
+   "Peygamberimiz ve Ashab": 3,
+   "Eğitim, Teknoloji, Çevre ve Toplumsal Değişim": 1,
+   "Kur'an-ı Kerim": 0
+  },
+  {
    "keyword": "gazze",
    "total": 31,
    "Toplumsal Dayanışma, Merhamet ve Kardeşlik": 3,
@@ -4792,25 +4811,6 @@
    "İslam Coğrafyası ve Küresel Meseleler": 9,
    "Afet, Kriz ve Sağlık": 0,
    "Peygamberimiz ve Ashab": 1,
-   "Eğitim, Teknoloji, Çevre ve Toplumsal Değişim": 1,
-   "Kur'an-ı Kerim": 0
-  },
-  {
-   "keyword": "merhamet",
-   "total": 30,
-   "Toplumsal Dayanışma, Merhamet ve Kardeşlik": 14,
-   "İman, Tevhid ve Ahiret": 1,
-   "Ramazan, Oruç ve Bayramlar": 1,
-   "Ahlak, Erdem ve Söz": 4,
-   "İbadet ve Kulluk": 0,
-   "Aile, Çocuk ve Nesil": 2,
-   "Kandiller, Muharrem ve Mübarek Geceler": 1,
-   "Vatan, Millet ve Tarih": 0,
-   "Ekonomik Hayat: Kazanç, Zekat ve İsraf": 0,
-   "Sabır, Tevekkül ve Manevi Olgunluk": 1,
-   "İslam Coğrafyası ve Küresel Meseleler": 1,
-   "Afet, Kriz ve Sağlık": 1,
-   "Peygamberimiz ve Ashab": 3,
    "Eğitim, Teknoloji, Çevre ve Toplumsal Değişim": 1,
    "Kur'an-ı Kerim": 0
   },
@@ -4910,6 +4910,25 @@
    "Kur'an-ı Kerim": 0
   },
   {
+   "keyword": "aile",
+   "total": 26,
+   "Toplumsal Dayanışma, Merhamet ve Kardeşlik": 1,
+   "İman, Tevhid ve Ahiret": 0,
+   "Ramazan, Oruç ve Bayramlar": 0,
+   "Ahlak, Erdem ve Söz": 0,
+   "İbadet ve Kulluk": 0,
+   "Aile, Çocuk ve Nesil": 23,
+   "Kandiller, Muharrem ve Mübarek Geceler": 0,
+   "Vatan, Millet ve Tarih": 0,
+   "Ekonomik Hayat: Kazanç, Zekat ve İsraf": 0,
+   "Sabır, Tevekkül ve Manevi Olgunluk": 0,
+   "İslam Coğrafyası ve Küresel Meseleler": 0,
+   "Afet, Kriz ve Sağlık": 0,
+   "Peygamberimiz ve Ashab": 0,
+   "Eğitim, Teknoloji, Çevre ve Toplumsal Değişim": 2,
+   "Kur'an-ı Kerim": 0
+  },
+  {
    "keyword": "dayanışma",
    "total": 25,
    "Toplumsal Dayanışma, Merhamet ve Kardeşlik": 4,
@@ -4926,25 +4945,6 @@
    "Afet, Kriz ve Sağlık": 6,
    "Peygamberimiz ve Ashab": 0,
    "Eğitim, Teknoloji, Çevre ve Toplumsal Değişim": 0,
-   "Kur'an-ı Kerim": 0
-  },
-  {
-   "keyword": "aile",
-   "total": 25,
-   "Toplumsal Dayanışma, Merhamet ve Kardeşlik": 1,
-   "İman, Tevhid ve Ahiret": 0,
-   "Ramazan, Oruç ve Bayramlar": 0,
-   "Ahlak, Erdem ve Söz": 0,
-   "İbadet ve Kulluk": 0,
-   "Aile, Çocuk ve Nesil": 22,
-   "Kandiller, Muharrem ve Mübarek Geceler": 0,
-   "Vatan, Millet ve Tarih": 0,
-   "Ekonomik Hayat: Kazanç, Zekat ve İsraf": 0,
-   "Sabır, Tevekkül ve Manevi Olgunluk": 0,
-   "İslam Coğrafyası ve Küresel Meseleler": 0,
-   "Afet, Kriz ve Sağlık": 0,
-   "Peygamberimiz ve Ashab": 0,
-   "Eğitim, Teknoloji, Çevre ve Toplumsal Değişim": 2,
    "Kur'an-ı Kerim": 0
   },
   {
@@ -5290,6 +5290,25 @@
    "Kur'an-ı Kerim": 0
   },
   {
+   "keyword": "birlik ve beraberlik",
+   "total": 17,
+   "Toplumsal Dayanışma, Merhamet ve Kardeşlik": 4,
+   "İman, Tevhid ve Ahiret": 1,
+   "Ramazan, Oruç ve Bayramlar": 2,
+   "Ahlak, Erdem ve Söz": 0,
+   "İbadet ve Kulluk": 0,
+   "Aile, Çocuk ve Nesil": 0,
+   "Kandiller, Muharrem ve Mübarek Geceler": 1,
+   "Vatan, Millet ve Tarih": 9,
+   "Ekonomik Hayat: Kazanç, Zekat ve İsraf": 0,
+   "Sabır, Tevekkül ve Manevi Olgunluk": 0,
+   "İslam Coğrafyası ve Küresel Meseleler": 0,
+   "Afet, Kriz ve Sağlık": 0,
+   "Peygamberimiz ve Ashab": 0,
+   "Eğitim, Teknoloji, Çevre ve Toplumsal Değişim": 0,
+   "Kur'an-ı Kerim": 0
+  },
+  {
    "keyword": "üç aylar",
    "total": 17,
    "Toplumsal Dayanışma, Merhamet ve Kardeşlik": 0,
@@ -5319,25 +5338,6 @@
    "Aile, Çocuk ve Nesil": 0,
    "Kandiller, Muharrem ve Mübarek Geceler": 0,
    "Vatan, Millet ve Tarih": 0,
-   "Ekonomik Hayat: Kazanç, Zekat ve İsraf": 0,
-   "Sabır, Tevekkül ve Manevi Olgunluk": 0,
-   "İslam Coğrafyası ve Küresel Meseleler": 0,
-   "Afet, Kriz ve Sağlık": 0,
-   "Peygamberimiz ve Ashab": 0,
-   "Eğitim, Teknoloji, Çevre ve Toplumsal Değişim": 0,
-   "Kur'an-ı Kerim": 0
-  },
-  {
-   "keyword": "birlik ve beraberlik",
-   "total": 16,
-   "Toplumsal Dayanışma, Merhamet ve Kardeşlik": 4,
-   "İman, Tevhid ve Ahiret": 1,
-   "Ramazan, Oruç ve Bayramlar": 2,
-   "Ahlak, Erdem ve Söz": 0,
-   "İbadet ve Kulluk": 0,
-   "Aile, Çocuk ve Nesil": 0,
-   "Kandiller, Muharrem ve Mübarek Geceler": 1,
-   "Vatan, Millet ve Tarih": 8,
    "Ekonomik Hayat: Kazanç, Zekat ve İsraf": 0,
    "Sabır, Tevekkül ve Manevi Olgunluk": 0,
    "İslam Coğrafyası ve Küresel Meseleler": 0,
@@ -5502,19 +5502,19 @@
  "top_keywords": [
   {
    "keyword": "kardeşlik",
-   "count": 43
+   "count": 44
   },
   {
    "keyword": "dua",
    "count": 34
   },
   {
-   "keyword": "gazze",
+   "keyword": "merhamet",
    "count": 31
   },
   {
-   "keyword": "merhamet",
-   "count": 30
+   "keyword": "gazze",
+   "count": 31
   },
   {
    "keyword": "sabır",
@@ -5537,11 +5537,11 @@
    "count": 26
   },
   {
-   "keyword": "dayanışma",
-   "count": 25
+   "keyword": "aile",
+   "count": 26
   },
   {
-   "keyword": "aile",
+   "keyword": "dayanışma",
    "count": 25
   },
   {
@@ -5617,15 +5617,15 @@
    "count": 18
   },
   {
+   "keyword": "birlik ve beraberlik",
+   "count": 17
+  },
+  {
    "keyword": "üç aylar",
    "count": 17
   },
   {
    "keyword": "ramazan bayramı",
-   "count": 16
-  },
-  {
-   "keyword": "birlik ve beraberlik",
    "count": 16
   },
   {
@@ -5665,6 +5665,10 @@
    "count": 13
   },
   {
+   "keyword": "sıla-i rahim",
+   "count": 13
+  },
+  {
    "keyword": "sorumluluk bilinci",
    "count": 13
   },
@@ -5690,10 +5694,6 @@
   },
   {
    "keyword": "dürüstlük",
-   "count": 12
-  },
-  {
-   "keyword": "sıla-i rahim",
    "count": 12
   },
   {
@@ -5741,13 +5741,13 @@
    "count": 10
   }
  ],
- "total_hutbe": 723,
- "total_citations": 1552,
- "total_ayet": 692,
- "total_hadis": 840,
+ "total_hutbe": 726,
+ "total_citations": 1561,
+ "total_ayet": 696,
+ "total_hadis": 845,
  "total_sahabe_isim": 20,
- "total_keywords": 1700,
- "total_keyword_mentions": 4065,
+ "total_keywords": 1706,
+ "total_keyword_mentions": 4080,
  "year_min": 2011,
  "year_max": 2026,
  "top_category": "İman, Tevhid ve Ahiret"
