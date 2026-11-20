@@ -4,9 +4,9 @@ Ahmed b. Hanbel,Müsned,40
 Tirmizî,Sıfatü’l-kıyâme,37
 Müslim,Îmân,35
 Müslim,Birr,34
-Buhârî,Edeb,28
+Buhârî,Edeb,29
 Buhârî,Îmân,25
-Ebû Dâvûd,Edeb,23
+Ebû Dâvûd,Edeb,25
 Müslim,Sıyâm,19
 Tirmizî,Zühd,16
 Tirmizî,Menâkıb,16
@@ -57,6 +57,8 @@ Müslim,Zikir,4
 Müslim,Mesâcid,4
 Buhârî,Ezân,4
 İbn Mâce,Ticâret,4
+Ebû Dâvûd,Tatavvu’,4
+Müslim,Fedâil,4
 Ebû Dâvûd,Libâs,4
 Müslim,Tahâret,4
 Müslim,Müsâkât,4
@@ -71,8 +73,6 @@ Müslim,Hac,3
 Tirmizî,Savm,3
 İbn Mâce,Tahâret,3
 Müslim,Vasiyyet,3
-Ebû Dâvûd,Tatavvu’,3
-Müslim,Fedâil,3
 Müslim,Cum’a,3
 Tirmizî,Fedâilü’l-cihâd,3
 Müslim,Salât,3

@@ -18,11 +18,11 @@
    "Kur'an-ı Kerim"
   ],
   "values": [
-   73,
+   74,
    76,
    74,
-   68,
-   63,
+   69,
+   64,
    59,
    57,
    57,
@@ -328,11 +328,11 @@
     0
    ],
    [
-    2,
+    3,
     3,
     5,
-    3,
     4,
+    5,
     4,
     2,
     8,
@@ -4522,11 +4522,11 @@
   },
   {
    "name": "Maide",
-   "count": 34
+   "count": 35
   },
   {
    "name": "İsra",
-   "count": 33
+   "count": 34
   },
   {
    "name": "Nisa",
@@ -4545,16 +4545,16 @@
    "count": 18
   },
   {
+   "name": "Nahl",
+   "count": 16
+  },
+  {
    "name": "A'raf",
    "count": 16
   },
   {
    "name": "En'am",
    "count": 16
-  },
-  {
-   "name": "Nahl",
-   "count": 15
   },
   {
    "name": "Furkan",
@@ -4586,7 +4586,7 @@
   },
   {
    "label": "Maide 32",
-   "count": 11,
+   "count": 12,
    "quote": "Kim, bir cana kıymamış ya da yeryüzünde bozgunculuk yapmamış olan bir insanı öldürürse, sanki bütün insanları öldürmüş gibidir."
   },
   {
@@ -4635,6 +4635,11 @@
    "quote": "Ey Rabbimiz! Unutur veya yanılırsak bizi sorumlu tutma. Ey Rabbimiz! Bize, bizden öncekilere yüklediğin gibi ağır yük yükleme. Ey Rabbimiz! Bize gücümüzün yetmediği şeyleri yükleme. Bizi affet, bizi bağışla ve bize acı. Sen bizim Mevlâmızsın. Kâfirler topluluğuna karşı bize yardım et."
   },
   {
+   "label": "Nahl 97",
+   "count": 6,
+   "quote": "Erkek veya kadın, kim mü'min olarak salih amel işlerse, elbette ona çok güzel bir hayat yaşatacağız ve onların mükafatlarını yapmakta olduklarının en güzeli ile vereceğiz."
+  },
+  {
    "label": "Necm 39",
    "count": 6,
    "quote": "İnsan için ancak çalıştığı vardır. Şüphesiz onun çalışması ileride görülecektir. Sonra çalışmasının karşılığı kendisine tastamam verilecektir."
@@ -4655,6 +4660,11 @@
    "quote": "Andolsun, biz insanoğlunu şerefli kıldık. Onları karada ve denizde taşıdık. Kendilerini en güzel ve temiz şeylerden rızıklandırdık ve onları yarattıklarımızın birçoğundan üstün kıldık."
   },
   {
+   "label": "İsra 36",
+   "count": 6,
+   "quote": "Hakkında kesin bilgi sahibi olmadığın şeyin peşine düşme. Çünkü kulak, göz ve kalp, bunların hepsi ondan sorumludur"
+  },
+  {
    "label": "Hadid 4",
    "count": 6,
    "quote": "Her nerede olursanız olun Allah sizinledir. Her ne yaparsanız Allah onu görendir."
@@ -4663,16 +4673,6 @@
    "label": "Enbiya 92",
    "count": 6,
    "quote": "Doğrusu sizin ümmetiniz, bir tek ümmettir. Ben de sizin Rabbinizim. Öyleyse bana ibadet ediniz."
-  },
-  {
-   "label": "Rum 41",
-   "count": 6,
-   "quote": "İnsanların kendi elleriyle yapıp ettikleri yüzünden karada ve denizde düzen bozuldu; böylece Allah dönüş yapsınlar diye işlediklerinin bir kısmını onlara tattırıyor."
-  },
-  {
-   "label": "Bakara 183",
-   "count": 5,
-   "quote": "Ey iman edenler! Kötülüklerden sakınmanız için oruç, sizden öncekilere farz kılındığı gibi, size de farz kılındı."
   }
  ],
  "top_hadis_kaynak": [
@@ -4682,11 +4682,11 @@
   },
   {
    "name": "Buhârî",
-   "count": 208
+   "count": 209
   },
   {
    "name": "Müslim",
-   "count": 173
+   "count": 174
   },
   {
    "name": "İbn Mâce",
@@ -4694,7 +4694,7 @@
   },
   {
    "name": "Ebû Dâvûd",
-   "count": 64
+   "count": 67
   },
   {
    "name": "Ahmed b. Hanbel",
@@ -4778,8 +4778,8 @@
   },
   {
    "keyword": "merhamet",
-   "total": 31,
-   "Toplumsal Dayanışma, Merhamet ve Kardeşlik": 15,
+   "total": 32,
+   "Toplumsal Dayanışma, Merhamet ve Kardeşlik": 16,
    "İman, Tevhid ve Ahiret": 1,
    "Ramazan, Oruç ve Bayramlar": 1,
    "Ahlak, Erdem ve Söz": 4,
@@ -4872,6 +4872,25 @@
    "Kur'an-ı Kerim": 0
   },
   {
+   "keyword": "helal kazanç",
+   "total": 27,
+   "Toplumsal Dayanışma, Merhamet ve Kardeşlik": 0,
+   "İman, Tevhid ve Ahiret": 0,
+   "Ramazan, Oruç ve Bayramlar": 2,
+   "Ahlak, Erdem ve Söz": 3,
+   "İbadet ve Kulluk": 3,
+   "Aile, Çocuk ve Nesil": 0,
+   "Kandiller, Muharrem ve Mübarek Geceler": 1,
+   "Vatan, Millet ve Tarih": 0,
+   "Ekonomik Hayat: Kazanç, Zekat ve İsraf": 18,
+   "Sabır, Tevekkül ve Manevi Olgunluk": 0,
+   "İslam Coğrafyası ve Küresel Meseleler": 0,
+   "Afet, Kriz ve Sağlık": 0,
+   "Peygamberimiz ve Ashab": 0,
+   "Eğitim, Teknoloji, Çevre ve Toplumsal Değişim": 0,
+   "Kur'an-ı Kerim": 0
+  },
+  {
    "keyword": "ramazan",
    "total": 27,
    "Toplumsal Dayanışma, Merhamet ve Kardeşlik": 2,
@@ -4889,25 +4908,6 @@
    "Peygamberimiz ve Ashab": 0,
    "Eğitim, Teknoloji, Çevre ve Toplumsal Değişim": 0,
    "Kur'an-ı Kerim": 2
-  },
-  {
-   "keyword": "helal kazanç",
-   "total": 26,
-   "Toplumsal Dayanışma, Merhamet ve Kardeşlik": 0,
-   "İman, Tevhid ve Ahiret": 0,
-   "Ramazan, Oruç ve Bayramlar": 2,
-   "Ahlak, Erdem ve Söz": 3,
-   "İbadet ve Kulluk": 2,
-   "Aile, Çocuk ve Nesil": 0,
-   "Kandiller, Muharrem ve Mübarek Geceler": 1,
-   "Vatan, Millet ve Tarih": 0,
-   "Ekonomik Hayat: Kazanç, Zekat ve İsraf": 18,
-   "Sabır, Tevekkül ve Manevi Olgunluk": 0,
-   "İslam Coğrafyası ve Küresel Meseleler": 0,
-   "Afet, Kriz ve Sağlık": 0,
-   "Peygamberimiz ve Ashab": 0,
-   "Eğitim, Teknoloji, Çevre ve Toplumsal Değişim": 0,
-   "Kur'an-ı Kerim": 0
   },
   {
    "keyword": "aile",
@@ -4949,12 +4949,12 @@
   },
   {
    "keyword": "ibadet",
-   "total": 24,
+   "total": 25,
    "Toplumsal Dayanışma, Merhamet ve Kardeşlik": 0,
    "İman, Tevhid ve Ahiret": 1,
    "Ramazan, Oruç ve Bayramlar": 6,
    "Ahlak, Erdem ve Söz": 0,
-   "İbadet ve Kulluk": 12,
+   "İbadet ve Kulluk": 13,
    "Aile, Çocuk ve Nesil": 1,
    "Kandiller, Muharrem ve Mübarek Geceler": 3,
    "Vatan, Millet ve Tarih": 0,
@@ -5510,7 +5510,7 @@
   },
   {
    "keyword": "merhamet",
-   "count": 31
+   "count": 32
   },
   {
    "keyword": "gazze",
@@ -5529,12 +5529,12 @@
    "count": 27
   },
   {
-   "keyword": "ramazan",
+   "keyword": "helal kazanç",
    "count": 27
   },
   {
-   "keyword": "helal kazanç",
-   "count": 26
+   "keyword": "ramazan",
+   "count": 27
   },
   {
    "keyword": "aile",
@@ -5546,7 +5546,7 @@
   },
   {
    "keyword": "ibadet",
-   "count": 24
+   "count": 25
   },
   {
    "keyword": "iman",
@@ -5673,6 +5673,10 @@
    "count": 13
   },
   {
+   "keyword": "kulluk bilinci",
+   "count": 13
+  },
+  {
    "keyword": "milli birlik",
    "count": 12
   },
@@ -5694,10 +5698,6 @@
   },
   {
    "keyword": "dürüstlük",
-   "count": 12
-  },
-  {
-   "keyword": "kulluk bilinci",
    "count": 12
   },
   {
@@ -5737,17 +5737,17 @@
    "count": 11
   },
   {
-   "keyword": "hicri yılbaşı",
+   "keyword": "şiddet",
    "count": 10
   }
  ],
- "total_hutbe": 726,
- "total_citations": 1561,
- "total_ayet": 696,
- "total_hadis": 845,
+ "total_hutbe": 729,
+ "total_citations": 1571,
+ "total_ayet": 701,
+ "total_hadis": 850,
  "total_sahabe_isim": 20,
- "total_keywords": 1706,
- "total_keyword_mentions": 4080,
+ "total_keywords": 1712,
+ "total_keyword_mentions": 4095,
  "year_min": 2011,
  "year_max": 2026,
  "top_category": "İman, Tevhid ve Ahiret"

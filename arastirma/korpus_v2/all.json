@@ -7984,5 +7984,38 @@
   "ton": "teşvik; uyarı",
   "muhatap": "millet",
   "eylem_cagrisi": "ahlaki"
+ },
+ {
+  "id": "2026-11-06",
+  "tarih": "06.11.2026",
+  "baslik": "İBADET",
+  "ana_kategori": "İbadet ve Kulluk",
+  "ikincil_kategoriler": "Toplumsal Dayanışma, Merhamet ve Kardeşlik",
+  "cerceve": "birey",
+  "ton": "teşvik; bilgilendirme",
+  "muhatap": "genel",
+  "eylem_cagrisi": "ahlaki"
+ },
+ {
+  "id": "2026-11-13",
+  "tarih": "13.11.2026",
+  "baslik": "DİJİTAL MECRADA AHLAK",
+  "ana_kategori": "Ahlak, Erdem ve Söz",
+  "ikincil_kategoriler": "Eğitim, Teknoloji, Çevre ve Toplumsal Değişim; Aile, Çocuk ve Nesil",
+  "cerceve": "birey",
+  "ton": "uyarı; teşvik",
+  "muhatap": "gençler",
+  "eylem_cagrisi": "ahlaki"
+ },
+ {
+  "id": "2026-11-20",
+  "tarih": "20.11.2026",
+  "baslik": "MERHAMET",
+  "ana_kategori": "Toplumsal Dayanışma, Merhamet ve Kardeşlik",
+  "ikincil_kategoriler": "Aile, Çocuk ve Nesil",
+  "cerceve": "aile",
+  "ton": "uyarı; teşvik",
+  "muhatap": "aileler",
+  "eylem_cagrisi": "ahlaki"
  }
 ]
